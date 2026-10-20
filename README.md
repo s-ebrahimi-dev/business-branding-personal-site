@@ -1,56 +1,58 @@
-# نمونه وب‌سایت برند شخصی — Motion Edition v2
+# Personal Branding Website — Motion Edition v2
 
-نمونه فارسی و راست‌چین برای معرفی یک استاد دانشگاه و مشاور در حوزه استراتژی برند، معماری برند و طراحی کسب‌وکار. ساختار و فروشگاه محتوایی از سایت‌های نویسنده/کارآفرین الهام مفهومی گرفته، اما کپی مستقیم هیچ سایت مشخصی نیست.
+A Persian, right-to-left (RTL) website concept for introducing a university professor and consultant specializing in brand strategy, brand architecture, and business design. The structure and content showcase are conceptually inspired by author and entrepreneur websites, without directly copying any specific website.
 
-## اجرا
+## Getting Started
 
-نیازمندی: Node.js سازگار با Vite 8.
+**Requirement:** A Node.js version compatible with Vite 8.
+
+Install dependencies and start the development server:
 
 ```bash
 npm install
 npm run dev
 ```
 
-برای بیلد و پیش‌نمایش خروجی:
+To build the project and preview the production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## فناوری‌ها و رفتارها
+## Technologies and Features
 
-- HTML semantic و `dir="rtl"`
-- Tailwind CSS v4 و Vite
-- JavaScript و GSAP/ScrollTrigger
-- ویدیوی YouTube کاربر در پس‌زمینه هدر؛ muted، autoplay، loop، blur و overlay تیره. ویدیو از YouTube embed می‌شود و دانلود یا داخل پروژه بسته‌بندی نشده است.
-- پارالاکس قابل‌مشاهده برای پس‌زمینه هدر، تصویر بخش معرفی و تصویر سخنرانی
-- انیمیشن ورود متن اصلی و افکت typewriter برای پیام جایگاه‌یابی
-- انیمیشن تیترهای بخش‌ها، ردیف تخصص‌ها، کتاب‌ها، کارت‌های مقالات و عناصر تماس
-- `IntersectionObserver` برای ظاهرشدن تدریجی محتوا، بارگذاری تنبل تصاویر، بارگذاری نزدیک viewport برای iframe و ویدیوی محلی، و تشخیص بخش فعال ناوبری
-- ویدیوی موشن‌گرافیک محلی در بخش «از اندیشه تا اجرا» که فریم آن با اسکرول کنترل می‌شود
-- فیلتر مقالات، پنجره مطالعه مقاله و منوی موبایل
-- پشتیبانی از `prefers-reduced-motion`: در این حالت موشن خودکار و بارگذاری ویدیوی پس‌زمینه هدر غیرفعال می‌شود.
+- Semantic HTML with `dir="rtl"`
+- Tailwind CSS v4 and Vite
+- JavaScript and GSAP/ScrollTrigger
+- A user-provided YouTube video embedded in the hero background, featuring muted autoplay, looping, blur, and a dark overlay. The video is embedded from YouTube and is not downloaded or bundled with the project.
+- Visible parallax effects for the hero background, the About section image, and the speaking portrait
+- Hero text entrance animation and a typewriter effect for the positioning statement
+- Animated section headings, expertise rows, book mockups, article cards, and contact elements
+- `IntersectionObserver` for progressive content reveals, lazy-loading images, loading iframes and local videos near the viewport, and detecting the active navigation section
+- A locally hosted motion graphic in the "From Ideas to Execution" section, with video frames controlled by scrolling
+- Article filtering, an article-reading modal, and a mobile navigation menu
+- Support for `prefers-reduced-motion`: automatic motion effects and hero background video loading are disabled when reduced motion is preferred.
 
-## فایل‌های کلیدی
+## Key Files
 
-- `index.html`: ساختار صفحه
-- `src/input.css`: ظاهر، حالت‌های حرکت و responsive styles
-- `src/main.js`: رویدادها، lazy loading، typewriter، GSAP و ScrollTrigger
-- `vite.config.js`: پیکربندی Vite و افزونه Tailwind
-- `package.json`: دستورها و وابستگی‌ها
-- `public/videos/brand-story.mp4`: موشن‌گرافیک محلی برای بخش scroll-scrub
-- `public/images/brand-story-poster.jpg`: تصویر جایگزین موشن‌گرافیک
+- `index.html`: Page structure
+- `src/input.css`: Styling, motion states, and responsive styles
+- `src/main.js`: Event handling, lazy loading, typewriter effect, GSAP, and ScrollTrigger
+- `vite.config.js`: Vite configuration and Tailwind integration
+- `package.json`: Scripts and dependencies
+- `public/videos/brand-story.mp4`: Local motion graphic used for scroll-scrub animation
+- `public/images/brand-story-poster.jpg`: Poster image displayed as a fallback for the motion graphic
 
-## نکات مهم برای استقرار واقعی
+## Important Considerations for Production Deployment
 
-1. نام، پرتره، رزومه، سوابق، آثار و متن نمونه را با اطلاعات واقعی و تأییدشده استاد جایگزین کنید.
-2. هدر از آدرس `https://www.youtube-nocookie.com/embed/U1-tNfr9P8k` استفاده می‌کند. پیش از انتشار بررسی کنید ویدیو اجازه embed دارد و صاحب اثر با این کاربرد موافق است. اگر ویدیو حذف، محدود یا غیرفعال باشد، تصویر thumbnail و رنگ پس‌زمینه جایگزین نمایش داده می‌شود.
-3. autoplay ممکن است بسته به مرورگر، تنظیمات صرفه‌جویی داده یا مجوزهای ویدیو محدود شود. ویدیو عمداً بدون صدا پخش می‌شود و هنگام خروج هدر از دید تلاش می‌شود متوقف شود.
-4. تصویرهای مقاله، فضاهای کاری و سخنرانی از Unsplash به‌عنوان محتوای نمونه بارگذاری می‌شوند. برای انتشار، مجوز، بهینه‌سازی و میزبانی تصویرها را بررسی کنید.
-5. فرم تماس فقط اعتبارسنجی سمت مرورگر دارد؛ ارسال واقعی نیازمند بک‌اند، سرویس ایمیل یا سرویس فرم است.
-6. پرداخت، ثبت سفارش و تحویل محصول دیجیتال در این نمونه پیاده‌سازی نشده‌اند.
+1. Replace sample names, portraits, biographies, professional experience, portfolio items, and placeholder copy with accurate, verified information about the actual professor.
+2. The hero uses the following embed URL: `https://www.youtube-nocookie.com/embed/U1-tNfr9P8k`. Before publishing, verify that embedding is permitted and that the copyright holder agrees to this use. If the video is removed, restricted, or unavailable, a thumbnail image and background color are displayed as fallbacks.
+3. Autoplay may be restricted depending on browser policies, data-saving settings, or video permissions. The video intentionally plays without sound, and the implementation attempts to pause it when the hero leaves the viewport.
+4. Article, workspace, and speaking images are loaded from Unsplash as sample content. Before production deployment, review image licensing, optimization, and hosting arrangements.
+5. The contact form currently provides client-side validation only. Actual form submission requires a backend, an email service, or a form-handling service.
+6. Payment processing, order management, and digital product delivery have not been implemented in this project.
 
-## رفتار و دسترس‌پذیری
+## Motion Design and Accessibility
 
-انیمیشن‌ها برای هدایت توجه و روشن‌کردن مسیر محتوا استفاده می‌شوند، نه برای پنهان‌کردن اطلاعات. در صورت کاهش حرکت در سیستم‌عامل، هدر و متن به حالت ایستا برمی‌گردند؛ محتوا بدون اجرای انیمیشن نیز باید قابل خواندن بماند.
+Animations are used to guide attention and clarify the content journey, not to hide information. When the operating system indicates a reduced-motion preference, the hero and text return to static states. All content should remain readable and accessible even when animations are disabled.
