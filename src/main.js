@@ -1,12 +1,52 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './input.css';
-
+import {
+  initI18n,
+  applyTranslations,
+  changeLanguage,
+} from "./i18n/index.js";
 gsap.registerPlugin(ScrollTrigger);
+const updateLanguageButtons = (language) => {
+  document.querySelectorAll('[data-language]').forEach((button) => {
+    const isActive = button.dataset.language === language;
 
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    button.setAttribute('aria-pressed', String(isActive));
+
+    button.classList.toggle('bg-ink', isActive);
+    button.classList.toggle('text-white', isActive);
+
+    button.classList.toggle('text-ink', !isActive);
+    button.classList.toggle('hover:bg-ink/5', !isActive);
+  });
+};
+
+const initializeLanguage = async () => {
+  await initI18n();
+
+  applyTranslations();
+  updateLanguageButtons(
+    document.documentElement.lang
+  );
+
+  document.querySelectorAll('[data-language]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      try {
+        await changeLanguage(button.dataset.language);
+        updateLanguageButtons(button.dataset.language);
+      } catch (error) {
+        console.error('Failed to change language:', error);
+      }
+    });
+  });
+};
+
+await initializeLanguage();
+
 const html = document.documentElement;
 const body = document.body;
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 
 // Mobile navigation
 const menuToggle = document.querySelector('#menu-toggle');
@@ -474,3 +514,5 @@ if (!reducedMotion) {
 }
 
 document.querySelector('#current-year')?.replaceChildren(document.createTextNode(String(new Date().getFullYear())));
+
+

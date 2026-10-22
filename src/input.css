@@ -320,3 +320,17 @@ img { display: block; max-width: 100%; }
   .typewriter-cursor { animation: none; opacity: 1; }
   .lazy-image { transition: none; }
 }
+/* Instead of margin-left */
+.card {
+  margin-inline-start: 1rem;
+}
+
+/* Instead of padding-right */
+.section {
+  padding-inline-end: 2rem;
+}
+
+/* Instead of hardcoding text alignment */
+.section-title {
+  text-align: start;
+}

@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gsap": "^3.13.0"
+    "gsap": "^3.13.0",
+    "i18next": "^26.5.5",
+    "i18next-browser-languagedetector": "^8.2.1"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.14",
