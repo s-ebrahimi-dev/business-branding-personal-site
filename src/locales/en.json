@@ -1,4 +1,3 @@
-
 {
   "meta": {
     "title": "Dr. Seyed Morteza Azimzadeh | Brand Strategy & Business Design",
@@ -109,8 +108,15 @@
     "insight": "Insight",
     "alignment": "Alignment",
     "action": "Action",
-    "disclaimer": "This is a conceptual visualization. The final framework should reflect the professional's actual working method."
+    "disclaimer": "This is a conceptual visualization. The final framework should reflect the professional's actual working method.",
+    "captionStep1Title": "Make complexity visible",
+    "captionStep1Subtitle": "01 / OBSERVE",
+    "captionStep2Title": "Find the connections",
+    "captionStep2Subtitle": "02 / CONNECT",
+    "captionStep3Title": "Reach a clear decision",
+    "captionStep3Subtitle": "03 / DECIDE"
   },
+
   "works": {
     "kicker": "Books & Publications",
     "aside": "IDEAS YOU CAN TAKE WITH YOU",
@@ -132,7 +138,12 @@
     "orbitIdeas": "IDEAS → DECISIONS",
     "orbitSystems": "THINKING IN SYSTEMS",
     "floatingTitle": "Knowledge into Practice",
-    "floatingDescription": "Concept · Framework · Application"
+    "floatingDescription": "Concept · Framework · Application",
+    "bookOneSeries": "STRATEGY NOTES / 01",
+    "bookTwoSeries": "BUSINESS DESIGN / 02",
+    "bookThreeSeries": "BRAND STRATEGY / 03",
+    "orbitLabelA": "IDEAS → DECISIONS",
+    "orbitLabelB": "THINKING IN SYSTEMS"
   },
   "story": {
     "kicker": "From Thinking to Action",
@@ -146,8 +157,41 @@
     "captionIndex": "SCROLL STORY / 03",
     "videoLabel": "A motion graphic about the strategic thinking process",
     "videoTitle": "Make complexity visible",
+    "giantWord": "CLARITY",
     "videoInstruction": "SCROLL TO SCRUB / OBSERVE → CONNECT → DECIDE",
     "disclaimer": "The video at the top plays as a looping background. This separate section controls a local motion graphic frame by frame as you scroll."
+  },
+  "articles": {
+    "brand-architecture": {
+      "title": "Brand Architecture: From Diagram to Decision",
+      "category": "Brand Strategy",
+      "paragraphs": [
+        "Brand architecture is not merely an organizational chart of names and products; it is a tool for clarifying relationships. It shows the role of each brand, the audience it serves, and how it contributes to the credibility of the parent brand or other products.",
+        "The right starting point is not a list of names. We must understand the business decisions ahead, audience overlap, transferable values, and the cost of maintaining each brand. Then we can decide between an integrated, endorsed, or independent brand model.",
+        "The real measure is not how attractive the diagram looks, but whether the proposed architecture simplifies customer choices and makes organizational decision-making more coherent."
+      ]
+    },
+    "business-design": {
+      "title": "Business Design Starts with a Problem",
+      "category": "Business Design",
+      "paragraphs": [
+        "A business model is valuable when it explains who we serve, what value we create, and how that value can be delivered and captured sustainably.",
+        "A practical process begins with interviews, observation, analysis of alternatives, and a precise problem definition. We can then test the value proposition and key assumptions through small experiments.",
+        "The goal of business design is not to create a beautiful canvas, but to establish a shared language for decision-making and faster learning."
+      ]
+    },
+    "strategic-choices": {
+      "title": "Strategic Choices Mean Deciding What Not to Do",
+      "category": "Management and Leadership",
+      "paragraphs": [
+        "Strategy is not simply a list of desirable goals. Its difficult part is choosing priorities that focus limited resources while making clear what will not be done for now.",
+        "When every opportunity becomes a priority, an organization can be very busy without having a clear direction. Deliberate boundaries make decisions clearer and performance evaluation more meaningful.",
+        "A defensible strategic choice must be based on a clear understanding of the environment, organizational capabilities, and the value expected by the audience."
+      ]
+    },
+    "brandImageLabel": "BRAND STRATEGY",
+    "businessImageLabel": "BUSINESS DESIGN",
+    "leadershipImageLabel": "LEADERSHIP"
   },
   "insights": {
     "kicker": "Insights & Perspectives",
@@ -201,7 +245,10 @@
     "offer1": "Keynotes & Expert Panels",
     "offer2": "Strategy & Brand Workshops",
     "offer3": "Organizational Consulting",
-    "contactCta": "Explore Collaboration"
+    "contactCta": "Explore Collaboration",
+    "photoTag": "IDEAS IN CONVERSATION",
+    "stampThink": "THINK",
+    "stampShare": "SHARE"
   },
   "contact": {
     "kicker": "Start a Conversation",
