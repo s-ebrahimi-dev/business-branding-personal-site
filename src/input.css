@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./admin-styles-addition.css";
 
 @theme {
   --font-sans: "Vazirmatn", Tahoma, Arial, sans-serif;

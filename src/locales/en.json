@@ -280,6 +280,7 @@
     "backToTop": "Back to top"
   },
   "modal": {
+    "label": "Article preview",
     "close": "Close dialog",
     "category": "Sample article",
     "disclaimer": "This text is included to demonstrate the interface interaction and should be replaced with approved content."

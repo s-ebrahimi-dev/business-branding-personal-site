@@ -1,0 +1,34 @@
+/* Append these rules to src/input.css. Keep your existing @import "tailwindcss"; only once. */
+:root { font-family: "Vazirmatn", sans-serif; font-synthesis:none; text-rendering:optimizeLegibility; }
+body { min-width:320px; }
+.nav-item { display:inline-flex; flex:0 0 auto; align-items:center; gap:.65rem; border-radius:.8rem; padding:.8rem .9rem; text-align:right; white-space:nowrap; font-size:.875rem; color:rgb(255 255 255 / .68); transition:background-color .16s,color .16s; }
+.nav-item:hover { background:rgb(255 255 255 / .07); color:white; }
+.nav-item.is-active { background:rgb(255 255 255 / .12); color:white; }
+@media(min-width:1024px){.nav-item{width:100%;white-space:normal}}
+.stat-card,.panel-card { border:1px solid #EAE3D9; border-radius:1.1rem; background:#fff; padding:1.25rem; }
+@media(min-width:640px){.stat-card,.panel-card{padding:1.65rem}}
+.stat-number { margin:.8rem 0 .35rem; font-size:1.9rem; font-weight:800; letter-spacing:-.04em; }
+.section-title { font-size:1.1rem; font-weight:700; }
+.section-subtitle { margin-top:.45rem; font-size:.82rem; line-height:1.8; color:#827875; }
+.content-row { display:flex; align-items:center; gap:.85rem; }
+.content-thumb { display:flex; width:3.25rem; height:3.25rem; flex-shrink:0; align-items:center; justify-content:center; border-radius:.75rem; background:#F0E7E0; color:#6E3544; font-size:.75rem; font-weight:700; }
+.status { display:inline-flex; align-items:center; white-space:nowrap; border-radius:999px; padding:.3rem .65rem; font-size:.7rem; font-weight:600; }
+.status-published { background:#E8F5EC; color:#276749; } .status-draft { background:#FBF0D8; color:#8A5A12; }
+.quick-action { display:flex; width:100%; align-items:center; gap:.6rem; border:1px solid #EEE7DF; border-radius:.9rem; padding:.9rem; text-align:right; transition:border-color .16s,background .16s; }
+.quick-action:hover { border-color:#C9A8AE; background:#FCF9F6; }
+.primary-button { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; border-radius:.75rem; background:#6E3544; padding:.75rem 1.1rem; color:white; font-size:.85rem; font-weight:600; transition:background .16s; }
+.primary-button:hover { background:#512633; }
+.secondary-button { display:inline-flex; align-items:center; justify-content:center; border:1px solid #E5DED5; border-radius:.75rem; padding:.75rem 1.1rem; font-size:.85rem; font-weight:600; }
+.secondary-button:hover { background:#F8F3ED; }
+.field { display:block; width:100%; min-width:0; border:1px solid #E5DED5; border-radius:.75rem; background:white; padding:.8rem .9rem; color:#292321; font-size:.875rem; outline:none; }
+.field:focus { border-color:#8B4655; box-shadow:0 0 0 3px rgb(139 70 85 / .08); }
+.field::placeholder { color:#B2A6A0; }
+.form-label { display:block; font-size:.85rem; font-weight:600; line-height:1.8; }
+.table-head { border-bottom:1px solid #EAE3D9; padding:1rem .75rem; color:#827875; font-weight:500; white-space:nowrap; }
+.table-cell { border-bottom:1px solid #F0EBE5; padding:1.1rem .75rem; }
+.media-card { overflow:hidden; border:1px solid #EEE7DF; border-radius:1rem; }
+.media-placeholder { display:flex; min-height:10rem; flex-direction:column; align-items:center; justify-content:center; gap:.5rem; background:linear-gradient(135deg,#EDE3D9,#F7F1E9); color:#6E3544; font-size:2rem; }
+.media-placeholder span { font-size:.75rem; color:#827875; }
+.media-library-item { display:flex; align-items:center; gap:.9rem; border:1px solid #EEE7DF; border-radius:.9rem; padding:1rem; color:#6E3544; }
+.media-library-item span { color:#292321; }
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
