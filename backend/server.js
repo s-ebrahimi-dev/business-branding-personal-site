@@ -5,7 +5,10 @@ import cors from 'cors';
 import { connectDB } from './configs/db.js';
 import session from 'express-session';
 import MongoStore from 'connect-mongo';
-
+import authRoutes from './routes/auth.routes.js';
+import contentRoutes from './routes/content.routes.js';
+import { requireAuth } from './middlewares/requireAuth.js';
+import { requireRole } from './middlewares/requireRole.js';
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -46,6 +49,24 @@ app.use(
     },
   })
 );
+app.get(
+  '/api/test/admin',
+  requireAuth,
+  requireRole('admin'),
+  (req, res) => {
+    res.status(200).json({
+      success: true,
+      message: 'Admin access granted.',
+      user: {
+        id: req.user._id,
+        role: req.user.role,
+      },
+    });
+  }
+);
+app.use('/api/auth', authRoutes);
+app.use('/api/content', contentRoutes);
+
 app.get('/api/health', (req, res) => {
   res.json({
     success: true,
