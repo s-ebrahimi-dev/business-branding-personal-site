@@ -9,6 +9,8 @@ import authRoutes from './routes/auth.routes.js';
 import contentRoutes from './routes/content.routes.js';
 import { requireAuth } from './middlewares/requireAuth.js';
 import { requireRole } from './middlewares/requireRole.js';
+import translationRoutes from './routes/translation.routes.js';
+
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -66,6 +68,7 @@ app.get(
 );
 app.use('/api/auth', authRoutes);
 app.use('/api/content', contentRoutes);
+app.use('/api/translation', translationRoutes);
 
 app.get('/api/health', (req, res) => {
   res.json({
