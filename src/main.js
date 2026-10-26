@@ -125,6 +125,7 @@ function setMenuOpen(isOpen) {
 menuToggle?.addEventListener('click', () => {
   const isOpen = menuToggle.getAttribute('aria-expanded') !== 'true';
   setMenuOpen(isOpen);
+   updateMenuLabel(isOpen);
 });
 
 mobileNav?.querySelectorAll('a').forEach((link) => {
@@ -169,4 +170,20 @@ if ('IntersectionObserver' in window && !reduceMotion) {
   revealElements.forEach((element) => {
     element.classList.add('is-visible');
   });
+}
+
+function updateMenuLabel(isOpen) {
+  const menuToggle = document.querySelector("#menu-toggle");
+  const menuLabel = document.querySelector("#menu-label");
+
+  if (!menuToggle || !menuLabel) return;
+
+  menuLabel.textContent = i18next.t(
+    isOpen ? "menu.close" : "menu.open"
+  );
+
+  menuToggle.setAttribute(
+    "aria-label",
+    i18next.t(isOpen ? "menu.closeLabel" : "menu.openLabel")
+  );
 }
