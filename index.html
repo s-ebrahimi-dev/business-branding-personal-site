@@ -1,1573 +1,1102 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-theme="light" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f8f7f2" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dce8e1" />
     <meta
       name="description"
-      content="وب‌سایت شخصی یک استاد و مشاور در حوزه استراتژی برند، معماری برند و طراحی کسب‌وکار؛ اندیشه‌ها، آثار و راه‌های همکاری."
-      data-i18n-attr="content:meta.description"
+      content="با چارچوب عمارت کسب‌وکار آشنا شوید؛ رویکردی یکپارچه به معماری کسب‌وکار، استراتژی برند، پژوهش، کتاب‌ها، مقالات، پادکست‌ها و آموزش."
     />
-    <title data-i18n="meta.title">
-      دکتر سید مرتضی عظیم زاده | استراتژی برند و طراحی کسب‌وکار
-    </title>
+    <title>عمارت کسب‌وکار | دکتر سید مرتضی عظیم‌زاده</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="/src/main.js"></script>
   </head>
+  <body
+    class="m-0 min-w-[320px] overflow-x-clip font-sans text-[var(--ink)] antialiased transition-colors duration-300"
+  >
+    <header
+      class="sticky top-3 z-50 mx-auto mt-3 flex min-h-[72px] w-[min(1240px,calc(100%-28px))] items-center justify-between gap-4 rounded-[18px] border border-[var(--glass-border)] bg-[var(--nav-glass)] px-5 py-2.5 shadow-[0_12px_32px_rgba(21,53,54,0.07)] backdrop-blur-2xl max-[960px]:gap-3 max-[720px]:top-[7px] max-[720px]:mt-[7px] max-[720px]:min-h-[62px] max-[720px]:w-[calc(100%-14px)] max-[720px]:rounded-[15px] max-[720px]:px-3"
+      aria-label="سربرگ اصلی"
+    >
+      <a
+        class="flex min-w-0 shrink-0 items-center gap-2.5"
+        href="#home"
+        aria-label="صفحه اصلی عمارت کسب‌وکار"
+      >
+        <span
+          class="grid size-10 shrink-0 place-items-center rounded-xl border border-[var(--line)] bg-[var(--glass)] text-[var(--accent)] max-[720px]:size-[34px]"
+          aria-hidden="true"
+        >
+          <svg class="size-[25px] max-[720px]:size-[22px]" viewBox="0 0 32 32">
+            <path
+              d="M4 12 16 4l12 8M6 13h20M8 14v11M13 14v11M19 14v11M24 14v11M5 26h22M3 29h26"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13 25v-6a3 3 0 0 1 6 0v6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.3"
+            />
+          </svg>
+        </span>
 
-  <body class="bg-paper font-sans text-ink antialiased">
-    <a class="skip-link" href="#main" data-i18n="common.skipToContent">
-      رفتن به محتوای اصلی
-    </a>
+        <span class="min-w-0">
+          <strong
+            class="block whitespace-nowrap font-display text-[13px] leading-tight tracking-[-0.035em] max-[720px]:text-[11px]"
+          >
+            دکتر سید مرتضی عظیم‌زاده
+          </strong>
+          <small
+            class="mt-1 block whitespace-nowrap text-[9px] text-[var(--muted)] max-[720px]:text-[8px]"
+          >
+            معماری کسب‌وکار و برند
+          </small>
+        </span>
+      </a>
 
-    <header class="site-header sticky top-0 z-50">
-      <div
-        class="mx-auto flex max-w-330 items-center justify-between gap-4 px-5 py-3 md:px-8 xl:px-10"
+      <nav
+        id="site-nav"
+        class="flex min-w-0 items-center gap-[clamp(10px,1.5vw,22px)] max-[960px]:hidden"
+        aria-label="ناوبری اصلی"
       >
         <a
-          href="#home"
-          class="brand-lockup flex min-w-0 items-center gap-3"
-          aria-label="صفحه اصلی"
-          data-i18n-attr="aria-label:nav.home"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          href="#mansion"
+          data-i18n="nav.mansion"
+          >عمارت کسب‌وکار</a
         >
-          <span
-            class="brand-symbol grid size-11 shrink-0 place-items-center rounded-full bg-gold text-ink font-black"
-            aria-hidden="true"
-            >د</span
-          >
-          <span class="min-w-0">
-            <span
-              class="block truncate text-sm font-extrabold tracking-tight md:text-base"
-              data-i18n="brand.name"
-              >سید مرتضی عظیم زاده</span
-            >
-            <span
-              class="mt-0.5 block text-[10px] text-ink/55 md:text-xs"
-              data-i18n="brand.tagline"
-              >استراتژی برند · طراحی کسب‌وکار</span
-            >
-          </span>
-        </a>
-
-        <nav
-          class="hidden items-center gap-7 lg:flex"
-          aria-label="ناوبری اصلی"
-          data-i18n-attr="aria-label:nav.mainLabel"
-        >
-          <a class="nav-link is-current" href="#home" data-i18n="nav.home"
-            >خانه</a
-          >
-          <a class="nav-link" href="#about" data-i18n="nav.about">درباره من</a>
-          <a class="nav-link" href="#expertise" data-i18n="nav.expertise"
-            >حوزه‌های تخصصی</a
-          >
-          <a class="nav-link" href="#works" data-i18n="nav.works"
-            >کتاب‌ها و آثار</a
-          >
-          <a class="nav-link" href="#insights" data-i18n="nav.articles"
-            >یادداشت‌ها</a
-          >
-        </nav>
-
         <a
-          href="#contact"
-          class="header-cta hidden items-center gap-2 rounded-full bg-ink px-5 py-3 text-xs font-bold text-white transition hover:bg-gold hover:text-ink sm:inline-flex"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          href="#library"
+          data-i18n="nav.library"
+          >کتابخانه</a
         >
-          <span data-i18n="nav.consultation">گفت‌وگوی حرفه‌ای</span>
-          <span aria-hidden="true">↖</span>
-        </a>
-
-        <div
-          class="language-switcher flex shrink-0 items-center gap-1 rounded-full border border-ink/15 p-1"
-          role="group"
-          aria-label="انتخاب زبان"
-          data-i18n-attr="aria-label:language.switcherLabel"
+        <a
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          href="#about"
+          data-i18n="nav.about"
+          >درباره</a
         >
-          <button
-            type="button"
-            data-language="fa"
-            aria-pressed="true"
-            class="language-button rounded-full bg-ink px-3 py-2 text-xs font-bold text-white transition"
-          >
-            فارسی
-          </button>
+        <a
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          href="#books"
+          data-i18n="nav.books"
+          >کتاب‌ها</a
+        >
+        <a
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          href="#articles"
+          data-i18n="nav.articles"
+          >مقالات</a
+        >
+        <a
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          href="#learning"
+          data-i18n="nav.learning"
+          >آموزش</a
+        >
+      </nav>
 
-          <button
-            type="button"
-            data-language="en"
-            aria-pressed="false"
-            class="language-button rounded-full px-3 py-2 text-xs font-bold text-ink transition hover:bg-ink/5"
+      <div class="flex shrink-0 items-center gap-2">
+        <button
+          id="language-toggle"
+          type="button"
+          class="flex min-h-9 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--glass)] px-3 text-[11px] font-semibold text-[var(--ink)] transition-colors hover:border-[var(--accent)]"
+          aria-label="Switch language to English"
+          lang="en"
+        >
+          EN
+        </button>
+
+        <button
+          id="theme-toggle"
+          type="button"
+          class="flex min-h-9 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--glass)] px-3 text-[10px] text-[var(--ink)] transition-colors hover:border-[var(--accent)] max-[720px]:px-2"
+          aria-label="تغییر به حالت تاریک"
+        >
+          <svg
+            class="size-4"
+            id="theme-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
           >
-            EN
-          </button>
-        </div>
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l-1.42 1.42m11.3-11.3 1.42-1.42"
+            />
+          </svg>
+          <span id="theme-label" class="max-[720px]:sr-only">حالت تاریک</span>
+        </button>
 
         <button
           id="menu-toggle"
-          class="grid size-11 shrink-0 place-items-center rounded-full border border-ink/15 text-ink lg:hidden"
           type="button"
-          aria-label="باز کردن منو"
+          class="hidden min-h-9 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--glass)] px-3 text-[11px] text-[var(--ink)] max-[960px]:inline-flex"
           aria-expanded="false"
           aria-controls="mobile-nav"
-          data-i18n-attr="aria-label:nav.openMenu"
+          aria-label="باز کردن منو"
         >
-          <svg
-            id="menu-open-icon"
-            class="size-5"
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M4 7h16M4 12h16M4 17h16"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-            />
-          </svg>
-          <svg
-            id="menu-close-icon"
-            class="hidden size-5"
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="m6 6 12 12M18 6 6 18"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-            />
-          </svg>
+          <span id="menu-label" data-i18n="menu.open">منو</span>
         </button>
       </div>
 
       <nav
         id="mobile-nav"
-        class="mobile-nav hidden border-t border-ink/10 px-5 pb-5 pt-3 lg:hidden"
+        class="absolute left-0 right-0 top-[calc(100%+9px)] z-50 hidden grid-cols-2 gap-1 rounded-2xl border border-[var(--glass-border)] bg-[var(--glass-strong)] p-2.5 shadow-[var(--shadow)] backdrop-blur-2xl min-[961px]:hidden"
         aria-label="ناوبری موبایل"
-        data-i18n-attr="aria-label:nav.mobileLabel"
       >
-        <div class="mx-auto flex max-w-[1320px] flex-col gap-1 md:px-3">
-          <a class="mobile-nav-link" href="#home" data-i18n="nav.home">خانه</a>
-          <a class="mobile-nav-link" href="#about" data-i18n="nav.about"
-            >درباره من</a
-          >
-          <a class="mobile-nav-link" href="#expertise" data-i18n="nav.expertise"
-            >حوزه‌های تخصصی</a
-          >
-          <a class="mobile-nav-link" href="#works" data-i18n="nav.works"
-            >کتاب‌ها و آثار</a
-          >
-          <a class="mobile-nav-link" href="#insights" data-i18n="nav.articles"
-            >یادداشت‌ها</a
-          >
-          <a
-            class="mt-3 inline-flex items-center justify-center rounded-full bg-gold px-5 py-3 text-sm font-bold text-ink"
-            href="#contact"
-            data-i18n="nav.requestCollaboration"
-            >درخواست همکاری</a
-          >
-        </div>
+        <a
+          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          href="#mansion"
+          data-i18n="nav.mansion"
+          >عمارت کسب‌وکار</a
+        >
+        <a
+          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          href="#library"
+          data-i18n="nav.library"
+          >کتابخانه</a
+        >
+        <a
+          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          href="#about"
+          data-i18n="nav.about"
+          >درباره</a
+        >
+        <a
+          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          href="#books"
+          data-i18n="nav.books"
+          >کتاب‌ها</a
+        >
+        <a
+          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          href="#articles"
+          data-i18n="nav.articles"
+          >مقالات</a
+        >
+        <a
+          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          href="#learning"
+          data-i18n="nav.learning"
+          >آموزش</a
+        >
       </nav>
     </header>
 
-    <main id="main">
-      <!-- Hero -->
+    <main>
       <section
+        class="relative mx-auto grid min-h-[670px] w-[min(1200px,calc(100%-56px))] grid-cols-[minmax(0,1fr)_minmax(0,1.02fr)] items-center gap-[clamp(22px,4vw,60px)] pt-[75px] pb-[78px] max-[960px]:min-h-[590px] max-[960px]:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] max-[960px]:gap-[22px] max-[720px]:w-[calc(100%-32px)] max-[720px]:min-h-0 max-[720px]:grid-cols-1 max-[720px]:gap-6 max-[720px]:pt-16 max-[720px]:pb-[63px]"
         id="home"
-        class="hero-section hero-video-hero relative isolate overflow-hidden"
       >
-        <div class="hero-video-parallax" aria-hidden="true">
-          <div class="hero-video-poster"></div>
-          <video
-            id="hero-background-video"
-            class="hero-background-video"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="auto"
-            aria-hidden="true"
+        <div class="relative z-10 min-w-0 py-[10px] pb-[18px]" data-reveal>
+          <p
+            class="mb-[22px] flex items-center gap-[11px] text-[10px] font-bold uppercase tracking-[0.19em] text-[var(--ink-soft)] before:block before:h-px before:w-[34px] before:bg-[var(--accent)]"
           >
-            <source src="/videos/Data.mp4" type="video/mp4" />
-          </video>
-        </div>
+            چارچوبی برای ساخت کسب‌وکارهای معنادار
+          </p>
 
-        <div class="hero-video-blur" aria-hidden="true"></div>
-        <div class="hero-video-shade" aria-hidden="true"></div>
-        <div class="hero-video-grain" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
-
-        <div
-          class="relative z-10 mx-auto flex min-h-[680px] max-w-[1320px] flex-col justify-center px-5 py-24 sm:min-h-[740px] sm:px-8 sm:py-28 lg:min-h-[790px] lg:px-10"
-        >
-          <div class="hero-copy max-w-5xl">
-            <div
-              class="hero-eyebrow mb-7 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-xs font-bold text-white/90 backdrop-blur-md"
-              data-hero
-            >
-              <span class="live-dot live-dot-light" aria-hidden="true"></span>
-              <span data-i18n="hero.eyebrow"
-                >اندیشه استراتژیک برای کسب‌وکارهای متمایز</span
-              >
-            </div>
-
-            <h1
-              class="hero-title max-w-5xl text-[2.7rem] font-black leading-[1.45] tracking-[-.045em] text-white sm:text-6xl sm:leading-[1.35] xl:text-[5.3rem]"
-              aria-label="از پیچیدگی به وضوح؛ برندهای متمایز، تصمیم‌های روشن و کسب‌وکارهای معنادار."
-              data-i18n-attr="aria-label:hero.accessibleTitle"
-            >
-              <span class="hero-title-line block overflow-hidden">
-                <span
-                  class="hero-title-inner inline-block"
-                  data-i18n="hero.title"
-                  >از پیچیدگی به وضوح.</span
-                >
-              </span>
-
-              <span class="hero-title-line block overflow-hidden">
-                <span class="hero-title-inner inline-block text-gold">
-                  <span
-                    class="typewriter-text"
-                    data-typewriter
-                    data-i18n-attr="data-words:hero.typewriterWords"
-                    data-words='["برندهای متمایز", "تصمیم‌های روشن", "کسب‌وکارهای معنادار"]'
-                    aria-hidden="true"
-                    >برندهای متمایز</span
-                  >
-                  <span class="typewriter-cursor" aria-hidden="true"></span>
-                </span>
-              </span>
-            </h1>
-
-            <p
-              class="hero-description mt-7 max-w-2xl text-base leading-8 text-white/78 sm:text-lg sm:leading-9"
-              data-hero
-              data-i18n="hero.description"
-            >
-              از هویت برند تا معماری کسب‌وکار؛ کمک می‌کنم سازمان‌ها پیچیدگی را
-              به وضوح، و ایده‌ها را به تصمیم‌های منسجم تبدیل کنند.
-            </p>
-
-            <div
-              class="hero-actions mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
-              data-hero
-            >
-              <a
-                href="#about"
-                class="button-primary inline-flex items-center justify-center gap-3 rounded-full bg-gold px-6 py-4 text-sm font-extrabold text-ink transition hover:-translate-y-1 hover:bg-white"
-              >
-                <span data-i18n="hero.aboutCta">با رویکرد من آشنا شوید</span>
-                <span aria-hidden="true" class="button-arrow">←</span>
-              </a>
-              <a
-                href="#works"
-                class="button-secondary button-secondary-light inline-flex items-center justify-center gap-2 rounded-full border border-white/35 px-6 py-4 text-sm font-bold text-white transition hover:border-gold hover:bg-white/10"
-                data-i18n="hero.worksCta"
-                >مشاهده آثار و کتاب‌ها</a
-              >
-            </div>
-
-            <div
-              class="hero-credentials mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-white/20 pt-6"
-              data-hero
-            >
-              <span class="credential-item credential-item-light">
-                <span class="credential-dot"></span>
-                <span data-i18n="hero.academicCredential"
-                  >عضو هیأت علمی دانشگاه فردوسی مشهد</span
-                >
-              </span>
-              <span class="credential-item credential-item-light">
-                <span class="credential-dot"></span>
-                <span data-i18n="hero.degreeCredential"
-                  >دکترای مدیریت کسب‌وکار</span
-                >
-              </span>
-            </div>
-          </div>
-
-          <div
-            class="hero-bottom-row mt-14 flex flex-wrap items-end justify-between gap-6 border-t border-white/15 pt-5"
-            data-hero
+          <h1
+            class="m-0 max-w-[690px] font-display text-[clamp(44px,6vw,78px)] font-bold leading-[0.99] tracking-[-0.075em] text-[var(--hero-ink)] max-[720px]:text-[clamp(45px,12vw,68px)]"
           >
-            <div class="hero-authority-note flex items-center gap-3">
-              <span
-                class="hero-monogram grid size-12 place-items-center rounded-full border border-gold/55 bg-gold/15 text-lg font-black text-gold"
-                aria-hidden="true"
-                >د</span
-              >
-              <span>
-                <strong
-                  class="block text-sm text-white"
-                  data-i18n="footer.brandName"
-                  >دکتر سید مرتضی عظیم زاده</strong
-                >
-                <small
-                  class="mt-1 block text-xs text-white/60"
-                  data-i18n="brand.expertiseLine"
-                  >استراتژی برند · معماری برند · طراحی کسب‌وکار</small
-                >
-              </span>
-            </div>
-
-            <a
-              href="#about"
-              class="hero-scroll-link inline-flex items-center gap-3 text-[10px] font-extrabold tracking-[.2em] text-white/70"
-              aria-label="اسکرول برای مشاهده ادامه وب‌سایت"
-              data-i18n-attr="aria-label:hero.scrollLabel"
+            هر کسب‌وکاری ساختاری دارد.<br />
+            به آن
+            <em
+              class="font-editorial text-[clamp(45px,6vw,79px)] font-medium leading-[1.05] tracking-[-0.06em] text-[var(--accent)] max-[720px]:text-[1em]"
+              >معماری</em
             >
-              <span data-i18n="hero.scrollText">SCROLL TO EXPLORE</span>
-              <span class="hero-scroll-line" aria-hidden="true"></span>
-              <span class="hero-scroll-arrow" aria-hidden="true">↓</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Authority strip -->
-      <section
-        class="authority-strip border-y border-ink/10 bg-white/55"
-        aria-label="حوزه‌های اعتبار حرفه‌ای"
-        data-i18n-attr="aria-label:authority.label"
-      >
-        <div
-          class="mx-auto grid max-w-[1320px] grid-cols-1 gap-0 px-5 sm:grid-cols-3 sm:px-8 lg:px-10"
-        >
-          <div class="authority-item">
-            <span class="authority-symbol">01</span>
-            <span>
-              <strong data-i18n="authority.researchTitle">پژوهش و تدریس</strong>
-              <small data-i18n="authority.researchDescription"
-                >نگاه تحلیلی و دانشگاهی</small
-              >
-            </span>
-          </div>
-          <div class="authority-item">
-            <span class="authority-symbol">02</span>
-            <span>
-              <strong data-i18n="authority.strategyTitle"
-                >استراتژی و مشاوره</strong
-              >
-              <small data-i18n="authority.strategyDescription"
-                >از مسئله تا انتخاب روشن</small
-              >
-            </span>
-          </div>
-          <div class="authority-item">
-            <span class="authority-symbol">03</span>
-            <span>
-              <strong data-i18n="authority.ideasTitle">ایده‌ها و آثار</strong>
-              <small data-i18n="authority.ideasDescription"
-                >دانش برای عمل حرفه‌ای</small
-              >
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section-space relative overflow-hidden">
-        <div
-          class="mx-auto grid max-w-[1320px] gap-12 px-5 sm:px-8 lg:grid-cols-[.78fr_1.22fr] lg:gap-24 lg:px-10"
-        >
-          <div class="about-visual relative" data-reveal>
-            <div
-              class="about-image-wrap overflow-hidden rounded-2xl bg-sand"
-              data-parallax-container
-            >
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                data-lazy-src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
-                class="lazy-image"
-                alt="فضای کاری و گفت‌وگوی حرفه‌ای؛ تصویر نمونه"
-                data-i18n-attr="alt:about.imageAlt"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
-            <div class="about-note">
-              <span class="about-note-mark" aria-hidden="true">“</span>
-              <p data-i18n="about.quote">
-                استراتژی خوب، قبل از آن‌که پاسخ بدهد، مسئله درست را تعریف
-                می‌کند.
-              </p>
-            </div>
-
-            <span
-              class="about-vertical-label"
-              aria-hidden="true"
-              data-i18n="about.verticalLabel"
-            >
-              A POINT OF VIEW, NOT JUST A SERVICE
-            </span>
-          </div>
-
-          <div class="about-copy self-center" data-reveal>
-            <p class="section-kicker">
-              <span class="kicker-dash"></span>
-              <span data-i18n="about.kicker">درباره رویکرد من</span>
-            </p>
-
-            <h2 class="section-title mt-5 max-w-3xl">
-              <span data-i18n="about.titleStart">به‌جای نسخه‌های آماده،</span>
-              <span class="marker-underline" data-i18n="about.titleHighlight"
-                >نگاه دقیق‌تر</span
-              >
-              <span data-i18n="about.titleEnd">به مسئله.</span>
-            </h2>
-
-            <p
-              class="mt-6 max-w-2xl text-base leading-8 text-ink/70 sm:text-lg sm:leading-9"
-              data-i18n="about.paragraph1"
-            >
-              برند و کسب‌وکار زمانی ماندگار می‌شوند که تصمیم‌های پراکنده، به یک
-              منطق روشن متصل باشند. رویکرد من بر شناخت مسئله، دیدن ارتباط میان
-              اجزا و تبدیل تحلیل به انتخاب‌های قابل اجرا تکیه دارد.
-            </p>
-
-            <p
-              class="mt-4 max-w-2xl text-sm leading-8 text-ink/65"
-              data-i18n="about.paragraph2"
-            >
-              در نقطه اتصال دانشگاه و عمل حرفه‌ای، تلاش می‌کنم مفاهیم استراتژیک
-              را به ابزارهایی قابل استفاده برای مدیران، کارآفرینان و تیم‌های
-              کسب‌وکار تبدیل کنم.
-            </p>
-
-            <a
-              class="inline-flex items-center gap-3 pt-7 text-sm font-extrabold text-forest group"
-              href="#contact"
-            >
-              <span data-i18n="about.contactCta"
-                >درباره همکاری گفت‌وگو کنیم</span
-              >
-              <span
-                class="text-lg transition-transform group-hover:-translate-x-1"
-                aria-hidden="true"
-                >←</span
-              >
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Expertise -->
-      <section id="expertise" class="section-space bg-ink text-white">
-        <div class="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-10">
-          <div class="section-topline" data-reveal>
-            <p class="section-kicker section-kicker-light">
-              <span class="kicker-dash"></span>
-              <span data-i18n="expertise.kicker">حوزه‌های تخصصی</span>
-            </p>
-            <span class="section-aside" data-i18n="expertise.aside"
-              >THREE CONNECTED DISCIPLINES</span
-            >
-          </div>
-
-          <div class="mt-5 grid gap-8 lg:grid-cols-[.72fr_1.28fr] lg:gap-16">
-            <div data-reveal>
-              <h2 class="section-title max-w-xl">
-                <span data-i18n="expertise.titleStart"
-                  >برای ساختن تمایز، باید</span
-                >
-                <span class="text-gold" data-i18n="expertise.titleHighlight"
-                  >کل تصویر</span
-                >
-                <span data-i18n="expertise.titleEnd">را دید.</span>
-              </h2>
-
-              <p
-                class="mt-5 max-w-md text-sm leading-8 text-white/65"
-                data-i18n="expertise.description"
-              >
-                هر حوزه از یک زاویه به مسئله نگاه می‌کند؛ ارزش واقعی زمانی شکل
-                می‌گیرد که این زاویه‌ها در کنار هم قرار بگیرند.
-              </p>
-            </div>
-
-            <div class="expertise-list">
-              <article class="expertise-row" data-reveal>
-                <span class="expertise-no">01</span>
-                <div class="expertise-main">
-                  <h3 data-i18n="expertise.brandStrategyTitle">
-                    استراتژی برند
-                  </h3>
-                  <p data-i18n="expertise.brandStrategyDescription">
-                    شفاف‌سازی جایگاه، ارزش پیشنهادی و معنایی که برند باید در ذهن
-                    مخاطب بسازد.
-                  </p>
-                </div>
-                <span class="expertise-icon" aria-hidden="true">↗</span>
-              </article>
-
-              <article class="expertise-row" data-reveal>
-                <span class="expertise-no">02</span>
-                <div class="expertise-main">
-                  <h3 data-i18n="expertise.brandArchitectureTitle">
-                    معماری برند
-                  </h3>
-                  <p data-i18n="expertise.brandArchitectureDescription">
-                    طراحی رابطه میان برند اصلی، زیر‌برندها، محصولات و سبد
-                    پیشنهادهای یک سازمان.
-                  </p>
-                </div>
-                <span class="expertise-icon" aria-hidden="true">↗</span>
-              </article>
-
-              <article class="expertise-row" data-reveal>
-                <span class="expertise-no">03</span>
-                <div class="expertise-main">
-                  <h3 data-i18n="expertise.businessDesignTitle">
-                    طراحی کسب‌وکار
-                  </h3>
-                  <p data-i18n="expertise.businessDesignDescription">
-                    هم‌راستا کردن مسئله مشتری، مدل ارزش‌آفرینی و تصمیم‌های کلیدی
-                    رشد.
-                  </p>
-                </div>
-                <span class="expertise-icon" aria-hidden="true">↗</span>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Strategic framework -->
-      <section
-        id="framework"
-        class="framework-section section-space overflow-hidden"
-      >
-        <div class="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-10">
-          <div class="section-topline" data-reveal>
-            <p class="section-kicker">
-              <span class="kicker-dash"></span>
-              <span data-i18n="framework.kicker">شیوه نگاه</span>
-            </p>
-            <span class="section-aside" data-i18n="framework.aside"
-              >FROM COMPLEXITY TO CLARITY</span
-            >
-          </div>
-
-          <div class="mt-5 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-            <div class="framework-copy" data-reveal>
-              <h2 class="section-title max-w-xl">
-                <span data-i18n="framework.titleStart"
-                  >استراتژی، یک اسلاید نیست؛</span
-                >
-                <span class="text-forest" data-i18n="framework.titleHighlight"
-                  >یک مسیر تصمیم‌گیری</span
-                >
-                <span data-i18n="framework.titleEnd">است.</span>
-              </h2>
-
-              <p
-                class="mt-6 max-w-xl text-base leading-8 text-ink/70"
-                data-i18n="framework.description"
-              >
-                به‌جای پرش مستقیم به راه‌حل، مسئله را لایه‌به‌لایه باز می‌کنیم.
-                با اسکرول، مدل بصری کنار صفحه نیز از ابهام به وضوح می‌رسد.
-              </p>
-
-              <div class="framework-steps mt-8">
-                <div class="framework-step is-active" data-step="0">
-                  <span>۱</span>
-                  <div>
-                    <strong data-i18n="framework.step1Title">شناخت</strong>
-                    <small data-i18n="framework.step1Description"
-                      >دیدن زمینه و تعریف مسئله</small
-                    >
-                  </div>
-                </div>
-
-                <div class="framework-step" data-step="1">
-                  <span>۲</span>
-                  <div>
-                    <strong data-i18n="framework.step2Title"
-                      >هم‌راستاسازی</strong
-                    >
-                    <small data-i18n="framework.step2Description"
-                      >وصل کردن بینش‌ها به انتخاب‌ها</small
-                    >
-                  </div>
-                </div>
-
-                <div class="framework-step" data-step="2">
-                  <span>۳</span>
-                  <div>
-                    <strong data-i18n="framework.step3Title">تمایز</strong>
-                    <small data-i18n="framework.step3Description"
-                      >تبدیل تصمیم به مسیر قابل اجرا</small
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="framework-visual-wrap"
-              aria-label="تصویرسازی روند تفکر استراتژیک"
-              data-i18n-attr="aria-label:framework.visualLabel"
-            >
-              <div class="framework-visual" id="framework-visual">
-                <div class="framework-grid" aria-hidden="true"></div>
-
-                <svg
-                  class="framework-svg"
-                  viewBox="0 0 600 600"
-                  aria-hidden="true"
-                >
-                  <defs>
-                    <linearGradient id="orbitGradient" x1="0" x2="1">
-                      <stop offset="0%" stop-color="#e9b93f" />
-                      <stop offset="100%" stop-color="#1d5947" />
-                    </linearGradient>
-                  </defs>
-
-                  <circle
-                    class="orbit orbit-a"
-                    cx="300"
-                    cy="300"
-                    r="205"
-                    fill="none"
-                    stroke="url(#orbitGradient)"
-                    stroke-width="1.5"
-                    stroke-dasharray="6 10"
-                  />
-                  <circle
-                    class="orbit orbit-b"
-                    cx="300"
-                    cy="300"
-                    r="150"
-                    fill="none"
-                    stroke="#22352d"
-                    stroke-opacity=".22"
-                    stroke-width="1.5"
-                  />
-                  <circle
-                    class="orbit orbit-c"
-                    cx="300"
-                    cy="300"
-                    r="96"
-                    fill="none"
-                    stroke="#22352d"
-                    stroke-opacity=".35"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    class="orbit-path"
-                    d="M95 300 C95 180 180 95 300 95 S505 180 505 300 S420 505 300 505 S95 420 95 300Z"
-                    fill="none"
-                    stroke="#d29c22"
-                    stroke-width="2"
-                    stroke-dasharray="1 13"
-                    stroke-linecap="round"
-                  />
-
-                  <g class="framework-node node-one">
-                    <circle cx="300" cy="95" r="18" fill="#e8b73e" />
-                    <circle cx="300" cy="95" r="5" fill="#202a25" />
-                  </g>
-                  <g class="framework-node node-two">
-                    <circle cx="505" cy="300" r="18" fill="#1d5947" />
-                    <circle cx="505" cy="300" r="5" fill="#fff" />
-                  </g>
-                  <g class="framework-node node-three">
-                    <circle cx="300" cy="505" r="18" fill="#e8b73e" />
-                    <circle cx="300" cy="505" r="5" fill="#202a25" />
-                  </g>
-
-                  <g class="framework-core">
-                    <circle cx="300" cy="300" r="72" fill="#202a25" />
-                    <path
-                      d="M278 300h44M300 278v44"
-                      stroke="#f7f3e8"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                    <circle
-                      cx="300"
-                      cy="300"
-                      r="48"
-                      fill="none"
-                      stroke="#f7f3e8"
-                      stroke-opacity=".25"
-                    />
-                  </g>
-                </svg>
-
-                <div class="framework-label label-one">
-                  <span>01</span>
-                  <span data-i18n="framework.insight">بینش</span>
-                </div>
-                <div class="framework-label label-two">
-                  <span>02</span>
-                  <span data-i18n="framework.alignment">هم‌راستایی</span>
-                </div>
-                <div class="framework-label label-three">
-                  <span>03</span>
-                  <span data-i18n="framework.action">اقدام</span>
-                </div>
-
-                <div class="framework-caption">
-                  <span class="framework-caption-dot"></span>
-                  <strong id="framework-caption-title">از مسئله شروع کن</strong>
-                  <small id="framework-caption-desc"
-                    >وضوح، پیش‌شرط تصمیم خوب است.</small
-                  >
-                </div>
-              </div>
-
-              <p
-                class="mt-4 text-center text-xs text-ink/45"
-                data-i18n="framework.disclaimer"
-              >
-                این تصویرسازی مفهومی است؛ چارچوب نهایی باید با روش کار واقعی
-                استاد تطبیق داده شود.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured works -->
-      <section
-        id="works"
-        class="works-section section-space overflow-hidden bg-gold"
-      >
-        <div class="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-10">
-          <div class="section-topline" data-reveal>
-            <p class="section-kicker section-kicker-dark">
-              <span class="kicker-dash"></span>
-              <span data-i18n="works.kicker">کتاب‌ها و آثار</span>
-            </p>
-            <span class="section-aside" data-i18n="works.aside"
-              >IDEAS YOU CAN TAKE WITH YOU</span
-            >
-          </div>
-
-          <div
-            class="mt-5 grid items-center gap-12 lg:grid-cols-[.95fr_1.05fr] lg:gap-20"
-          >
-            <div class="works-copy relative z-10" data-reveal>
-              <p
-                class="text-xs font-extrabold tracking-wide text-ink/55"
-                data-i18n="works.featuredLabel"
-              >
-                اثر پیشنهادی / کتاب شاخص
-              </p>
-
-              <h2 class="section-title mt-4 max-w-xl">
-                <span data-i18n="works.titleStart">Ideas for</span>
-                <span class="text-forest" data-i18n="works.titleHighlight">
-                  better decisions.
-                </span>
-              </h2>
-
-              <p
-                class="mt-5 max-w-xl text-base leading-8 text-ink/75"
-                data-i18n="works.description"
-              >
-                کتاب‌ها و آثار، فشرده‌ای از یک نگاه حرفه‌ای‌اند؛ راهی برای
-                آشنایی عمیق‌تر با مسئله‌ها، مدل‌ها و انتخاب‌هایی که در کار واقعی
-                اهمیت دارند.
-              </p>
-
-              <div class="mt-7 flex flex-wrap gap-3">
-                <a
-                  href="#contact"
-                  class="button-primary inline-flex items-center gap-3 rounded-full bg-ink px-6 py-4 text-sm font-bold text-white transition hover:-translate-y-1"
-                >
-                  <span data-i18n="works.exploreCta">آشنایی با آثار</span>
-                  <span aria-hidden="true">←</span>
-                </a>
-                <a
-                  href="#insights"
-                  class="inline-flex items-center gap-2 rounded-full border border-ink/25 px-6 py-4 text-sm font-bold transition hover:bg-white/35"
-                  data-i18n="works.articlesCta"
-                  >خواندن یادداشت‌ها</a
-                >
-              </div>
-
-              <p
-                class="mt-5 text-xs leading-6 text-ink/50"
-                data-i18n="works.disclaimer"
-              >
-                عنوان و جلد این کتاب‌ها نمونه طراحی هستند و باید با آثار واقعی
-                صاحب وب‌سایت جایگزین شوند.
-              </p>
-            </div>
-
-            <div class="book-stage" data-book-stage>
-              <div class="book-shadow" aria-hidden="true"></div>
-
-              <article class="book-mockup book-main" data-book-card>
-                <div class="book-spine"></div>
-                <div class="book-cover book-cover-main">
-                  <span class="book-series" data-i18n="works.book1Series"
-                    >STRATEGY NOTES / 01</span
-                  >
-                  <span class="book-cover-rule"></span>
-                  <h3 data-i18n="works.book1Title">معماری<br />تمایز</h3>
-                  <p data-i18n="works.book1Description">
-                    راهنمایی برای ساختن برندهای روشن و ماندگار
-                  </p>
-                  <span
-                    class="book-author"
-                    data-i18n="works.bookAuthorPlaceholder"
-                    >دکتر نام استاد</span
-                  >
-                  <span class="book-cover-ornament" aria-hidden="true">◎</span>
-                </div>
-              </article>
-
-              <article
-                class="book-mockup book-back book-back-one"
-                data-book-card
-              >
-                <div class="book-spine"></div>
-                <div class="book-cover book-cover-back-one">
-                  <span class="book-series" data-i18n="works.book2Series"
-                    >BUSINESS DESIGN / 02</span
-                  >
-                  <h3 data-i18n="works.book2Title">از ایده<br />تا مدل</h3>
-                  <span
-                    class="book-author"
-                    data-i18n="works.bookAuthorPlaceholder"
-                    >دکتر نام استاد</span
-                  >
-                  <span class="book-cover-ornament" aria-hidden="true">↗</span>
-                </div>
-              </article>
-
-              <article
-                class="book-mockup book-back book-back-two"
-                data-book-card
-              >
-                <div class="book-spine"></div>
-                <div class="book-cover book-cover-back-two">
-                  <span class="book-series" data-i18n="works.book3Series"
-                    >BRAND STRATEGY / 03</span
-                  >
-                  <h3 data-i18n="works.book3Title">معنای<br />برند</h3>
-                  <span
-                    class="book-author"
-                    data-i18n="works.bookAuthorPlaceholder"
-                    >دکتر نام استاد</span
-                  >
-                  <span class="book-cover-ornament" aria-hidden="true">✳</span>
-                </div>
-              </article>
-
-              <div
-                class="book-orbit orbit-label-a"
-                aria-hidden="true"
-                data-i18n="works.orbitIdeas"
-              >
-                IDEAS → DECISIONS
-              </div>
-              <div
-                class="book-orbit orbit-label-b"
-                aria-hidden="true"
-                data-i18n="works.orbitSystems"
-              >
-                THINKING IN SYSTEMS
-              </div>
-
-              <div class="book-floating-note">
-                <span aria-hidden="true">✳</span>
-                <div>
-                  <strong data-i18n="works.floatingTitle">دانش برای عمل</strong>
-                  <small data-i18n="works.floatingDescription"
-                    >مفهوم، چارچوب، کاربرد</small
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Story -->
-      <section id="story" class="story-section section-space bg-paper">
-        <div class="mx-auto max-w-330 px-5 sm:px-8 lg:px-10">
-          <div class="section-topline" data-reveal>
-            <p class="section-kicker">
-              <span class="kicker-dash"></span>
-              <span data-i18n="story.kicker">از اندیشه تا اجرا</span>
-            </p>
-            <span class="section-aside" data-i18n="story.aside"
-              >A STRATEGY IS A STORY IN MOTION</span
-            >
-          </div>
-
-          <div
-            class="mt-6 grid gap-8 lg:grid-cols-[.72fr_1.28fr] lg:items-end lg:gap-16"
-          >
-            <div data-reveal>
-              <h2 class="section-title">
-                <span data-i18n="story.titleStart">وقتی نگاه عوض می‌شود،</span>
-                <span class="text-forest" data-i18n="story.titleHighlight"
-                  >مسیر هم عوض می‌شود.</span
-                >
-              </h2>
-
-              <p
-                class="mt-5 max-w-lg text-sm leading-8 text-ink/65"
-                data-i18n="story.description"
-              >
-                یک تجربه بصری کوتاه برای نمایش فرایند فکر کردن، دیدن ارتباطات و
-                رسیدن به یک تصویر منسجم.
-              </p>
-            </div>
-
-            <div class="story-frame" id="story-frame">
-              <div
-                class="story-poster"
-                id="story-poster"
-                role="img"
-                aria-label="تصویرسازی مفهومی برای فرایند استراتژی برند"
-                data-i18n-attr="aria-label:story.posterLabel"
-              >
-                <div class="story-poster-grain" aria-hidden="true"></div>
-                <div
-                  class="story-giant-word"
-                  aria-hidden="true"
-                  data-i18n="story.giantWord"
-                >
-                  CLARITY
-                </div>
-                <div class="story-shape shape-a" aria-hidden="true"></div>
-                <div class="story-shape shape-b" aria-hidden="true"></div>
-                <div class="story-shape shape-c" aria-hidden="true"></div>
-
-                <div class="story-lines" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span
-                  ><span></span>
-                </div>
-
-                <div class="story-caption">
-                  <span class="story-play-mark" aria-hidden="true">↘</span>
-                  <div>
-                    <strong id="story-caption-title"
-                      >پیچیدگی را قابل دیدن کن</strong
-                    >
-                    <small id="story-caption-subtitle">01 / OBSERVE</small>
-                  </div>
-                  <span class="story-caption-index">SCROLL STORY / 03</span>
-                </div>
-              </div>
-
-              <video
-                id="brand-film"
-                class="brand-film"
-                muted
-                playsinline
-                preload="metadata"
-                poster="/images/brand-story-poster.jpg"
-                aria-label="موشن‌گرافیک درباره فرایند تفکر استراتژیک"
-                data-i18n-attr="aria-label:story.videoLabel"
-                data-video-src="/videos/brand-story.mp4"
-              ></video>
-
-              <div
-                id="story-video-overlay"
-                class="story-video-overlay"
-                aria-hidden="true"
-              >
-                <span class="story-play-mark">↘</span>
-                <div>
-                  <strong id="story-video-title"
-                    >پیچیدگی را قابل دیدن کن</strong
-                  >
-                  <small data-i18n="story.videoInstruction"
-                    >SCROLL TO SCRUB / OBSERVE → CONNECT → DECIDE</small
-                  >
-                </div>
-              </div>
-
-              <div class="story-progress-track" aria-hidden="true">
-                <span id="story-progress-bar"></span>
-              </div>
-            </div>
-          </div>
+            ببخشید.
+          </h1>
 
           <p
-            class="mt-3 text-xs leading-6 text-ink/45"
-            data-i18n="story.disclaimer"
+            class="mt-[25px] max-w-[480px] text-sm leading-[1.9] text-[var(--hero-muted)] max-[720px]:mt-5 max-[720px]:text-[13px]"
           >
-            ویدیوی بالای صفحه به‌صورت پس‌زمینه تکرارشونده نمایش داده می‌شود؛ این
-            بخش مستقل نیز با اسکرول، موشن‌گرافیک محلی را فریم‌به‌فریم کنترل
-            می‌کند.
+            با ایده‌های شکل‌دهنده به عمارت کسب‌وکار آشنا شوید؛ رویکردی یکپارچه
+            برای اندیشیدن به بنیان کسب‌وکار، معنای برند و ارتباط با بازار که با
+            پژوهش، آموزش و بینش کاربردی به هم پیوند می‌خورند.
+          </p>
+
+          <div class="mt-[29px] flex flex-wrap items-center gap-[11px]">
+            <a
+              class="inline-flex min-h-[47px] items-center justify-center gap-3 rounded-[13px] bg-[var(--button-bg)] px-[17px] text-[11px] font-bold text-[var(--button-text)] shadow-[0_9px_24px_rgba(18,50,52,0.12)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(18,50,52,0.17)]"
+              href="#mansion"
+            >
+              کاوش در عمارت کسب‌وکار <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="inline-flex min-h-[47px] items-center justify-center gap-3 rounded-[13px] border border-[var(--glass-border)] bg-[var(--glass)] px-[17px] text-[11px] font-bold text-[var(--ink)] transition hover:-translate-y-0.5"
+              href="#library"
+            >
+              ورود به کتابخانه <span aria-hidden="true">←</span>
+            </a>
+          </div>
+
+          <div
+            class="mt-9 flex items-center gap-[11px] text-[10px] text-[var(--muted)]"
+          >
+            <span
+              class="size-[7px] rounded-full bg-[var(--accent)] shadow-[0_0_0_5px_var(--accent-soft)]"
+            ></span>
+            پژوهش · استراتژی · آموزش
+          </div>
+        </div>
+
+        <div
+          class="relative grid min-h-[500px] min-w-0 place-items-center max-[720px]:min-h-[375px]"
+          data-reveal
+          aria-label="تصویر معماری عمارت کسب‌وکار"
+        >
+          <div
+            class="absolute aspect-square w-[78%] rounded-full bg-[radial-gradient(circle,rgba(239,245,232,0.55),rgba(239,245,232,0.05)_65%,transparent_70%)] blur-lg"
+          ></div>
+
+          <div
+            class="relative h-[435px] w-full max-w-[590px] overflow-hidden rounded-[28px] border border-[var(--glass-border)] bg-[linear-gradient(145deg,rgba(249,252,248,0.18),rgba(249,252,248,0.04))] shadow-[var(--shadow)] backdrop-blur-xl max-[960px]:h-[390px] max-[720px]:h-[330px] max-[720px]:rounded-[22px]"
+          >
+            <span
+              class="absolute left-[22px] top-5 text-[8px] tracking-[0.19em] text-[var(--muted)] max-[720px]:left-4 max-[720px]:top-[15px] max-[720px]:text-[7px]"
+              >معماری کسب‌وکار</span
+            >
+
+            <svg
+              class="absolute inset-x-2 top-[18px] h-[calc(100%-40px)] w-[calc(100%-16px)]"
+              id="mansion-illustration"
+              viewBox="0 0 560 420"
+              role="img"
+              aria-label="نمای کلاسیک یک عمارت با سه دروازه به‌هم‌پیوسته"
+            >
+              <g class="structure">
+                <path d="M28 128H532M42 117H518M64 105H496M76 93H484L280 22Z" />
+                <path d="M92 96 280 31 468 96M102 96H458M280 31V88" />
+                <path d="M42 130H518V142H42ZM52 146H508V157H52Z" />
+                <path
+                  d="M65 164H495V344H65ZM48 344H512V356H48ZM39 358H521V370H39Z"
+                />
+                <path d="M79 174H481V332H79Z" />
+                <path
+                  d="M88 182V328M101 182V328M459 182V328M472 182V328M116 175V329M444 175V329M65 172H495M64 332H496M42 384H518M58 395H502"
+                />
+              </g>
+              <g class="fine">
+                <path d="M147 175V329M413 175V329M135 169H159M401 169H425" />
+                <path
+                  d="M164 329V252A29 29 0 0 1 222 252V329Z M251 329V235A29 29 0 0 1 309 235V329Z M338 329V252A29 29 0 0 1 396 252V329Z"
+                />
+                <path
+                  d="M164 264H222M251 249H309M338 264H396M178 329V283M193 329V283M208 329V283M265 329V262M280 329V262M295 329V262M352 329V283M367 329V283M382 329V283"
+                />
+                <circle cx="193" cy="216" r="12" />
+                <path d="M186 216h14m-7-7v14" />
+                <rect x="268" y="195" width="24" height="24" rx="3" />
+                <path d="M274 207h12m-6-6v12" />
+                <circle cx="367" cy="216" r="12" />
+                <circle cx="363" cy="213" r="2" />
+                <circle cx="372" cy="220" r="2" />
+                <path d="M365 215l5 4" />
+              </g>
+              <g class="illustration-labels">
+                <text x="193" y="352" text-anchor="middle">بنیان</text>
+                <text x="280" y="352" text-anchor="middle">برند</text>
+                <text x="367" y="352" text-anchor="middle">بازار</text>
+              </g>
+            </svg>
+
+            <span
+              class="absolute bottom-[18px] right-[22px] text-[8px] tracking-[0.15em] text-[var(--muted)] max-[720px]:right-[14px] max-[720px]:bottom-3 max-[720px]:text-[7px]"
+              >عمارت کسب‌وکار / ۰۱</span
+            >
+          </div>
+
+          <div
+            class="absolute -right-[11px] bottom-[6px] w-[244px] rotate-[2deg] rounded-[18px] border border-[var(--glass-border)] bg-[var(--glass)] p-4 shadow-[var(--card-shadow)] backdrop-blur-xl max-[960px]:right-[-3px] max-[720px]:right-0 max-[720px]:bottom-[-10px] max-[720px]:w-[218px] max-[720px]:rounded-[15px] max-[720px]:p-3"
+          >
+            <span
+              class="absolute -left-[45px] top-[25px] size-[92px] rounded-tl-full border-l border-t border-[var(--accent)] opacity-55 max-[720px]:hidden"
+              aria-hidden="true"
+            ></span>
+            <div
+              class="flex justify-between gap-2 text-[8px] uppercase tracking-[0.12em] text-[var(--muted)]"
+            >
+              <span>نظام کسب‌وکار</span><span>۰۱—۰۳</span>
+            </div>
+            <strong class="mt-2 block font-display text-[13px] font-semibold"
+              >سه دروازه؛ یک کلِ به‌هم‌پیوسته</strong
+            >
+            <div class="mt-[13px] grid grid-cols-3 gap-[7px]">
+              <div
+                class="rounded-[10px] border border-[var(--line)] bg-white/[0.08] px-1 py-[9px] text-center text-[8px] text-[var(--ink-soft)]"
+              >
+                <span
+                  class="mx-auto mb-[7px] block size-[18px] rounded-full border border-[var(--accent)]"
+                ></span
+                >بنیان
+              </div>
+              <div
+                class="rounded-[10px] border border-[var(--line)] bg-white/[0.08] px-1 py-[9px] text-center text-[8px] text-[var(--ink-soft)]"
+              >
+                <span
+                  class="mx-auto mb-[7px] block size-[18px] rotate-45 rounded-[5px] border border-[var(--accent)]"
+                ></span
+                >برند
+              </div>
+              <div
+                class="rounded-[10px] border border-[var(--line)] bg-white/[0.08] px-1 py-[9px] text-center text-[8px] text-[var(--ink-soft)]"
+              >
+                <span
+                  class="mx-auto mb-[7px] block size-[18px] rounded-full border border-[var(--accent)] after:mx-auto after:mt-[7px] after:block after:size-[3px] after:rounded-full after:bg-[var(--accent)]"
+                ></span
+                >بازار
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-[19px] left-0 right-0 flex items-center justify-between gap-4 text-[9px] uppercase tracking-[0.1em] text-[var(--muted)] max-[720px]:bottom-3 max-[720px]:text-[8px]"
+        >
+          <span>عمارت کسب‌وکار / چارچوبی یکپارچه</span>
+          <span class="h-px flex-1 bg-[var(--line)]"></span>
+          <span>برای کاوش، به پایین بروید ↓</span>
+        </div>
+      </section>
+
+      <section
+        class="mx-auto mb-[95px] grid w-[min(1200px,calc(100%-56px))] grid-cols-3 gap-[13px] max-[720px]:mb-[67px] max-[720px]:w-[calc(100%-32px)] max-[720px]:grid-cols-1 max-[720px]:gap-[9px]"
+        aria-label="اصول بنیادین"
+      >
+        <article
+          class="relative min-h-[135px] overflow-hidden rounded-[19px] border border-[var(--glass-border)] bg-[var(--glass)] p-5 shadow-[var(--card-shadow)] backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-[var(--line)] after:content-[attr(data-number)] max-[720px]:min-h-[115px]"
+          data-number="01"
+          data-reveal
+        >
+          <span
+            class="mb-[13px] block text-[9px] font-bold tracking-[0.16em] text-[var(--accent)]"
+            >بنیان کسب‌وکار</span
+          >
+          <strong
+            class="block font-display text-[17px] font-semibold tracking-[-0.04em]"
+            >منطق زیربنایی کسب‌وکار را بسازید.</strong
+          >
+          <p
+            class="relative z-10 mt-2 max-w-[280px] text-[11px] leading-[1.65] text-[var(--muted)]"
+          >
+            هدف، مدل کسب‌وکار، توانمندی‌ها و انتخاب‌هایی که به کسب‌وکار ساختار
+            می‌بخشند.
+          </p>
+        </article>
+
+        <article
+          class="relative min-h-[135px] overflow-hidden rounded-[19px] border border-[var(--glass-border)] bg-[var(--glass)] p-5 shadow-[var(--card-shadow)] backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-[var(--line)] after:content-[attr(data-number)] max-[720px]:min-h-[115px]"
+          data-number="02"
+          data-reveal
+        >
+          <span
+            class="mb-[13px] block text-[9px] font-bold tracking-[0.16em] text-[var(--accent)]"
+            >برند کسب‌وکار</span
+          >
+          <strong
+            class="block font-display text-[17px] font-semibold tracking-[-0.04em]"
+            >معنای برند را روشن و متمایز کنید.</strong
+          >
+          <p
+            class="relative z-10 mt-2 max-w-[280px] text-[11px] leading-[1.65] text-[var(--muted)]"
+          >
+            هویت، معماری برند و تجربه‌ای که کسب‌وکار را به انسان‌ها پیوند
+            می‌دهد.
+          </p>
+        </article>
+
+        <article
+          class="relative min-h-[135px] overflow-hidden rounded-[19px] border border-[var(--glass-border)] bg-[var(--glass)] p-5 shadow-[var(--card-shadow)] backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-[var(--line)] after:content-[attr(data-number)] max-[720px]:min-h-[115px]"
+          data-number="03"
+          data-reveal
+        >
+          <span
+            class="mb-[13px] block text-[9px] font-bold tracking-[0.16em] text-[var(--accent)]"
+            >بازار کسب‌وکار</span
+          >
+          <strong
+            class="block font-display text-[17px] font-semibold tracking-[-0.04em]"
+            >ارزش را به جهان پیرامون پیوند دهید.</strong
+          >
+          <p
+            class="relative z-10 mt-2 max-w-[280px] text-[11px] leading-[1.65] text-[var(--muted)]"
+          >
+            جایگاه‌یابی، مشتریان، روابط و تناسب پایدار با نیازهای بازار.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="mx-auto w-[min(1200px,calc(100%-56px))] pt-[30px] pb-[100px] max-[720px]:w-[calc(100%-32px)] max-[720px]:pt-2 max-[720px]:pb-[70px]"
+        id="mansion"
+      >
+        <div
+          class="mb-[27px] flex items-end justify-between gap-[30px] max-[720px]:block"
+          data-reveal
+        >
+          <div>
+            <p
+              class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+            >
+              یک عمارت · سه دروازه
+            </p>
+            <h2
+              class="m-0 font-display text-[clamp(31px,4.2vw,49px)] font-semibold leading-[1.08] tracking-[-0.065em]"
+            >
+              عمارت
+              <em
+                class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+                >کسب‌وکار</em
+              >
+            </h2>
+          </div>
+          <p
+            class="mb-[3px] max-w-[330px] text-xs leading-[1.8] text-[var(--muted)] max-[720px]:mt-[15px]"
+          >
+            سه خدمت جدا از هم نیستند؛ بلکه سه بُعد به‌هم‌پیوسته از یک
+            کسب‌وکارند. هر دروازه به مجموعه‌ای رو‌به‌رشد از ایده‌ها، آثار مکتوب
+            و تجربه‌های یادگیری راه می‌گشاید.
           </p>
         </div>
-      </section>
 
-      <!-- Insights -->
-      <section id="insights" class="section-space bg-sand/55">
-        <div class="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-10">
-          <div class="section-topline" data-reveal>
-            <p class="section-kicker">
-              <span class="kicker-dash"></span>
-              <span data-i18n="insights.kicker">یادداشت‌ها و دیدگاه‌ها</span>
-            </p>
-            <a
-              class="text-link hidden items-center gap-2 text-sm font-bold lg:inline-flex"
-              href="#contact"
-            >
-              <span data-i18n="insights.allArticles">همه نوشته‌ها</span>
-              <span aria-hidden="true">←</span>
-            </a>
-          </div>
-
-          <div
-            class="mt-5 flex flex-col justify-between gap-5 md:flex-row md:items-end"
+        <div
+          class="grid grid-cols-3 gap-[15px] max-[960px]:grid-cols-2 max-[720px]:grid-cols-1 max-[720px]:gap-[11px]"
+        >
+          <article
+            class="flex min-h-[355px] min-w-0 flex-col overflow-hidden rounded-[22px] border border-[var(--glass-border)] bg-[var(--glass)] p-[23px] shadow-[var(--card-shadow)] backdrop-blur-xl transition duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow)] max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-[19px]"
             data-reveal
           >
-            <h2 class="section-title max-w-2xl" data-scroll-title>
-              <span data-i18n="insights.titleStart">ایده‌ها را بخوانید.</span>
-              <span class="text-forest" data-i18n="insights.titleHighlight"
-                >سؤال‌های بهتری بپرسید.</span
+            <div class="flex items-center justify-between gap-3">
+              <span class="text-[9px] tracking-[0.15em] text-[var(--muted)]"
+                >دروازه ۰۱ / نظام</span
               >
-            </h2>
-
+              <span
+                class="grid size-10 place-items-center rounded-[13px] border border-[var(--line)] text-[var(--accent)]"
+                aria-hidden="true"
+                ><svg class="size-[23px]" viewBox="0 0 24 24">
+                  <path
+                    d="M3 8h18M5 8V5h14v3M6 9v10m4-10v10m4-10v10m4-10v10M3 20h18M2 22h20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  /></svg
+              ></span>
+            </div>
+            <div
+              class="relative my-4 flex h-[104px] items-center justify-center overflow-hidden rounded-[15px] border border-[var(--line)] bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-[135px] before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[14px] max-[720px]:h-[88px]"
+            >
+              <svg
+                class="relative z-10 h-[84px] w-[110px]"
+                viewBox="0 0 130 90"
+                aria-hidden="true"
+              >
+                <path
+                  d="M15 68h100M21 58h88M28 48h74M36 38h58M42 28h46M65 10 42 28h46Z M32 68V55h66v13M43 55V44h44v11M53 44V34h24v10M24 74h82M30 79h70"
+                />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-[19px] font-semibold tracking-[-0.05em]"
+            >
+              بنیان کسب‌وکار
+            </h3>
             <p
-              class="max-w-md text-sm leading-7 text-ink/60"
-              data-i18n="insights.description"
+              class="my-[9px] mb-[17px] text-[11px] leading-[1.75] text-[var(--muted)]"
             >
-              چند نوشته نمونه برای نمایش نحوه ارائه مقاله و تحلیل‌های تخصصی.
+              آنچه اجزای کسب‌وکار را به هم پیوند می‌دهد: هدف، مدل کسب‌وکار،
+              استراتژی، توانمندی‌ها و منطق عملیاتی.
             </p>
-          </div>
-
-          <div
-            class="article-filters mt-7 flex flex-wrap gap-2"
-            role="group"
-            aria-label="فیلتر نوشته‌ها"
-            data-i18n-attr="aria-label:insights.filterLabel"
-          >
-            <button
-              class="filter-chip is-active"
-              type="button"
-              data-filter="all"
-              aria-pressed="true"
-              data-i18n="insights.filterAll"
-            >
-              همه نوشته‌ها
-            </button>
-
-            <button
-              class="filter-chip"
-              type="button"
-              data-filter="brand"
-              aria-pressed="false"
-              data-i18n="insights.filterBrand"
-            >
-              استراتژی برند
-            </button>
-
-            <button
-              class="filter-chip"
-              type="button"
-              data-filter="business"
-              aria-pressed="false"
-              data-i18n="insights.filterBusiness"
-            >
-              طراحی کسب‌وکار
-            </button>
-
-            <button
-              class="filter-chip"
-              type="button"
-              data-filter="leadership"
-              aria-pressed="false"
-              data-i18n="insights.filterLeadership"
-            >
-              مدیریت و رهبری
-            </button>
-          </div>
-
-          <div
-            id="article-grid"
-            class="article-grid mt-7 grid gap-5 md:grid-cols-2 xl:grid-cols-3"
-          >
-            <article class="article-card" data-category="brand">
-              <button
-                type="button"
-                class="article-card-button"
-                data-article="brand-architecture"
-                aria-label="مطالعه مقاله معماری برند، از نمودار تا تصمیم"
-                data-i18n-attr="aria-label:insights.article1.buttonLabel"
+            <div class="mt-auto flex flex-wrap gap-[6px]">
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >مدل کسب‌وکار</span
               >
-                <div class="article-image article-image-brand">
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                    data-lazy-src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=82"
-                    class="lazy-image"
-                    alt="دفتر یادداشت و ابزار تفکر؛ تصویر نمونه"
-                    data-i18n-attr="alt:insights.article1.imageAlt"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span
-                    class="article-image-label"
-                    data-i18n="insights.article1.imageLabel"
-                    >BRAND STRATEGY</span
-                  >
-                  <span class="article-image-index">01</span>
-                </div>
-
-                <div class="article-card-content">
-                  <div class="article-meta">
-                    <span data-i18n="insights.article1.category"
-                      >استراتژی برند</span
-                    >
-                    <span data-i18n="insights.article1.readTime"
-                      >۸ دقیقه مطالعه</span
-                    >
-                  </div>
-                  <h3 data-i18n="insights.article1.title">
-                    معماری برند؛ از نمودار تا تصمیم
-                  </h3>
-                  <p data-i18n="insights.article1.description">
-                    چطور ارتباط میان برندها و محصولات را به انتخابی قابل دفاع
-                    تبدیل کنیم؟
-                  </p>
-                  <span class="article-read">
-                    <span data-i18n="common.readMore">خواندن یادداشت</span>
-                    <b aria-hidden="true">←</b>
-                  </span>
-                </div>
-              </button>
-            </article>
-
-            <article class="article-card" data-category="business">
-              <button
-                type="button"
-                class="article-card-button"
-                data-article="business-design"
-                aria-label="مطالعه مقاله طراحی کسب‌وکار با مسئله شروع می‌شود"
-                data-i18n-attr="aria-label:insights.article2.buttonLabel"
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >استراتژی</span
               >
-                <div class="article-image article-image-business">
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                    data-lazy-src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=82"
-                    class="lazy-image"
-                    alt="محیط کار تیمی؛ تصویر نمونه"
-                    data-i18n-attr="alt:insights.article2.imageAlt"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span
-                    class="article-image-label"
-                    data-i18n="insights.article2.imageLabel"
-                    >BUSINESS DESIGN</span
-                  >
-                  <span class="article-image-index">02</span>
-                </div>
-
-                <div class="article-card-content">
-                  <div class="article-meta">
-                    <span data-i18n="insights.article2.category"
-                      >طراحی کسب‌وکار</span
-                    >
-                    <span data-i18n="insights.article2.readTime"
-                      >۶ دقیقه مطالعه</span
-                    >
-                  </div>
-                  <h3 data-i18n="insights.article2.title">
-                    طراحی کسب‌وکار با مسئله شروع می‌شود
-                  </h3>
-                  <p data-i18n="insights.article2.description">
-                    قبل از ترسیم مدل، باید بدانیم برای چه کسی و کدام مسئله ارزش
-                    خلق می‌کنیم.
-                  </p>
-                  <span class="article-read">
-                    <span data-i18n="common.readMore">خواندن یادداشت</span>
-                    <b aria-hidden="true">←</b>
-                  </span>
-                </div>
-              </button>
-            </article>
-
-            <article class="article-card" data-category="leadership">
-              <button
-                type="button"
-                class="article-card-button"
-                data-article="strategic-choices"
-                aria-label="مطالعه مقاله تصمیم استراتژیک یعنی چه چیزهایی را انتخاب نمی‌کنیم"
-                data-i18n-attr="aria-label:insights.article3.buttonLabel"
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >سازمان</span
               >
-                <div class="article-image article-image-leadership">
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                    data-lazy-src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=82"
-                    class="lazy-image"
-                    alt="گفت‌وگوی گروهی در جلسه؛ تصویر نمونه"
-                    data-i18n-attr="alt:insights.article3.imageAlt"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span
-                    class="article-image-label"
-                    data-i18n="insights.article3.imageLabel"
-                    >LEADERSHIP</span
-                  >
-                  <span class="article-image-index">03</span>
-                </div>
-
-                <div class="article-card-content">
-                  <div class="article-meta">
-                    <span data-i18n="insights.article3.category"
-                      >مدیریت و رهبری</span
-                    >
-                    <span data-i18n="insights.article3.readTime"
-                      >۷ دقیقه مطالعه</span
-                    >
-                  </div>
-                  <h3 data-i18n="insights.article3.title">
-                    تصمیم استراتژیک یعنی چه چیزهایی را انتخاب نمی‌کنیم
-                  </h3>
-                  <p data-i18n="insights.article3.description">
-                    تمرکز فقط فهرست اولویت‌ها نیست؛ پذیرفتن مرزهای روشن هم هست.
-                  </p>
-                  <span class="article-read">
-                    <span data-i18n="common.readMore">خواندن یادداشت</span>
-                    <b aria-hidden="true">←</b>
-                  </span>
-                </div>
-              </button>
-            </article>
-          </div>
-
-          <div
-            id="empty-filter-state"
-            class="hidden py-10 text-center text-sm text-ink/60"
-            data-i18n="insights.emptyState"
-          >
-            در این دسته هنوز نوشته‌ای قرار نگرفته است.
-          </div>
-        </div>
-      </section>
-
-      <!-- Speaking and professional authority -->
-      <section class="voice-section section-space bg-paper">
-        <div
-          class="mx-auto grid max-w-[1320px] gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16 lg:px-10"
-        >
-          <div class="voice-visual" data-reveal>
-            <div class="voice-photo-wrap" data-parallax-container>
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                data-lazy-src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1100&q=85"
-                class="lazy-image"
-                alt="فضای سخنرانی حرفه‌ای؛ تصویر نمونه"
-                data-i18n-attr="alt:voice.imageAlt"
-                loading="lazy"
-                decoding="async"
-              />
-              <div class="voice-photo-shade"></div>
-              <span class="voice-photo-tag" data-i18n="voice.imageTag"
-                >IDEAS IN CONVERSATION</span
-              >
-
-              <div class="voice-photo-caption">
-                <span data-i18n="voice.imageTopics"
-                  >گفت‌وگو · سخنرانی · کارگاه</span
-                >
-                <strong data-i18n="voice.imageCaption"
-                  >اندیشه، وقتی به اشتراک گذاشته می‌شود.</strong
-                >
-              </div>
             </div>
-
-            <div class="voice-stamp" aria-hidden="true">
-              <span data-i18n="voice.stampThink">THINK</span><b>×</b
-              ><span data-i18n="voice.stampShare">SHARE</span>
-            </div>
-          </div>
-
-          <div class="voice-copy" data-reveal>
-            <p class="section-kicker">
-              <span class="kicker-dash"></span>
-              <span data-i18n="voice.kicker">سخنرانی و همکاری حرفه‌ای</span>
-            </p>
-
-            <h2 class="section-title mt-5" data-scroll-title>
-              <span data-i18n="voice.titleStart">از گفت‌وگوی تخصصی تا</span>
-              <span class="text-forest" data-i18n="voice.titleHighlight"
-                >تغییر واقعی.</span
-              >
-            </h2>
-
-            <p
-              class="mt-6 max-w-xl text-base leading-8 text-ink/70"
-              data-i18n="voice.description"
-            >
-              برای سازمان‌ها، تیم‌های مدیریتی و رویدادهای تخصصی، مسیر همکاری
-              می‌تواند از یک گفت‌وگوی هدفمند آغاز شود؛ برای روشن کردن مسئله،
-              صورت‌بندی گزینه‌ها و ساختن زبان مشترک.
-            </p>
-
-            <div class="voice-offers mt-7">
-              <div>
-                <span>01</span>
-                <strong data-i18n="voice.offer1">سخنرانی و پنل تخصصی</strong>
-              </div>
-              <div>
-                <span>02</span>
-                <strong data-i18n="voice.offer2"
-                  >کارگاه‌های استراتژی و برند</strong
-                >
-              </div>
-              <div>
-                <span>03</span>
-                <strong data-i18n="voice.offer3"
-                  >مشاوره و همراهی سازمانی</strong
-                >
-              </div>
-            </div>
-
             <a
-              href="#contact"
-              class="button-primary mt-8 inline-flex items-center gap-3 rounded-full bg-ink px-6 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-forest"
+              class="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-[14px] text-[10px] font-bold"
+              href="#library"
+              >کاوش در بنیان کسب‌وکار
+              <span class="text-base text-[var(--accent)]">↗</span></a
             >
-              <span data-i18n="voice.contactCta">بررسی امکان همکاری</span>
-              <span aria-hidden="true">←</span>
-            </a>
+          </article>
+
+          <article
+            class="flex min-h-[355px] min-w-0 flex-col overflow-hidden rounded-[22px] border border-[var(--glass-border)] bg-[var(--glass)] p-[23px] shadow-[var(--card-shadow)] backdrop-blur-xl transition duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow)] max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-[19px]"
+            data-reveal
+          >
+            <div class="flex items-center justify-between gap-3">
+              <span class="text-[9px] tracking-[0.15em] text-[var(--muted)]"
+                >دروازه ۰۲ / معنا</span
+              >
+              <span
+                class="grid size-10 place-items-center rounded-[13px] border border-[var(--line)] text-[var(--accent)]"
+                aria-hidden="true"
+                ><svg class="size-[23px]" viewBox="0 0 24 24">
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="5.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  /></svg
+              ></span>
+            </div>
+            <div
+              class="relative my-4 flex h-[104px] items-center justify-center overflow-hidden rounded-[15px] border border-[var(--line)] bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-[135px] before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[14px] max-[720px]:h-[88px]"
+            >
+              <svg
+                class="relative z-10 h-[84px] w-[110px]"
+                viewBox="0 0 130 90"
+                aria-hidden="true"
+              >
+                <circle cx="65" cy="45" r="33" />
+                <circle cx="65" cy="45" r="25" />
+                <circle cx="65" cy="45" r="17" />
+                <circle cx="65" cy="45" r="9" />
+                <path
+                  d="M65 6v10M65 74v10M26 45h10M94 45h10M37 17l7 7M84 66l7 7M93 17l-7 7M44 66l-7 7"
+                />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-[19px] font-semibold tracking-[-0.05em]"
+            >
+              برند کسب‌وکار
+            </h3>
+            <p
+              class="my-[9px] mb-[17px] text-[11px] leading-[1.75] text-[var(--muted)]"
+            >
+              چگونگی شکل‌گیری هویت و معنای متمایز کسب‌وکار از طریق هویت برند،
+              تجربه، معماری برند و اعتبار.
+            </p>
+            <div class="mt-auto flex flex-wrap gap-[6px]">
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >هویت برند</span
+              >
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >معماری برند</span
+              >
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >تجربه</span
+              >
+            </div>
+            <a
+              class="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-[14px] text-[10px] font-bold"
+              href="#library"
+              >کاوش در دنیای برند
+              <span class="text-base text-[var(--accent)]">↗</span></a
+            >
+          </article>
+
+          <article
+            class="flex min-h-[355px] min-w-0 flex-col overflow-hidden rounded-[22px] border border-[var(--glass-border)] bg-[var(--glass)] p-[23px] shadow-[var(--card-shadow)] backdrop-blur-xl transition duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow)] max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-[19px]"
+            data-reveal
+          >
+            <div class="flex items-center justify-between gap-3">
+              <span class="text-[9px] tracking-[0.15em] text-[var(--muted)]"
+                >دروازه ۰۳ / ارتباط</span
+              >
+              <span
+                class="grid size-10 place-items-center rounded-[13px] border border-[var(--line)] text-[var(--accent)]"
+                aria-hidden="true"
+                ><svg class="size-[23px]" viewBox="0 0 24 24">
+                  <circle
+                    cx="5"
+                    cy="7"
+                    r="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  />
+                  <circle
+                    cx="18"
+                    cy="5"
+                    r="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  />
+                  <circle
+                    cx="14"
+                    cy="18"
+                    r="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  />
+                  <circle
+                    cx="5"
+                    cy="18"
+                    r="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  />
+                  <path
+                    d="m7 7 9-2M6 9v7m2 2h4m1-2 4-9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                  /></svg
+              ></span>
+            </div>
+            <div
+              class="relative my-4 flex h-[104px] items-center justify-center overflow-hidden rounded-[15px] border border-[var(--line)] bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-[135px] before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[14px] max-[720px]:h-[88px]"
+            >
+              <svg
+                class="relative z-10 h-[84px] w-[110px]"
+                viewBox="0 0 130 90"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18 67h94M24 62V24h82v38M34 62V34h62v28M43 62V44h44v18"
+                />
+                <circle cx="30" cy="21" r="4" />
+                <circle cx="65" cy="13" r="4" />
+                <circle cx="100" cy="21" r="4" />
+                <path
+                  d="M34 20 61 14m8 0 27 6M30 25l19 20m51-20L81 45m-36-9 4 9 9-2m16 2 7 0 3-9"
+                />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-[19px] font-semibold tracking-[-0.05em]"
+            >
+              بازار کسب‌وکار
+            </h3>
+            <p
+              class="my-[9px] mb-[17px] text-[11px] leading-[1.75] text-[var(--muted)]"
+            >
+              جایی که ارزش با انسان‌ها روبه‌رو می‌شود: نیاز مشتریان،
+              جایگاه‌یابی، رقابت، مشارکت و رشد.
+            </p>
+            <div class="mt-auto flex flex-wrap gap-[6px]">
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >مشتریان</span
+              >
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >جایگاه‌یابی</span
+              >
+              <span
+                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                >رشد</span
+              >
+            </div>
+            <a
+              class="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-[14px] text-[10px] font-bold"
+              href="#library"
+              >کاوش در بازار
+              <span class="text-base text-[var(--accent)]">↗</span></a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="mx-auto w-[min(1200px,calc(100%-56px))] pt-[30px] pb-[95px] max-[720px]:w-[calc(100%-32px)] max-[720px]:pt-2 max-[720px]:pb-[70px]"
+        id="library"
+      >
+        <div
+          class="mb-[27px] flex items-end justify-between gap-[30px] max-[720px]:block"
+          data-reveal
+        >
+          <div>
+            <p
+              class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+            >
+              کتابخانه دانش
+            </p>
+            <h2
+              class="m-0 font-display text-[clamp(31px,4.2vw,49px)] font-semibold leading-[1.08] tracking-[-0.065em]"
+            >
+              برای خواندن، شنیدن
+              <em
+                class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+                >و تجربه‌کردن.</em
+              >
+            </h2>
+          </div>
+          <p
+            class="mb-[3px] max-w-[330px] text-xs leading-[1.8] text-[var(--muted)] max-[720px]:mt-[15px]"
+          >
+            مجموعه‌ای زنده از پژوهش‌ها، کتاب‌ها، گفت‌وگوها و تجربه‌های یادگیری
+            که بر اساس چارچوب عمارت کسب‌وکار سازمان‌دهی شده است.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-[1.15fr_0.9fr_0.9fr_0.9fr] gap-[13px] max-[960px]:grid-cols-2 max-[720px]:gap-[9px] max-[390px]:grid-cols-1"
+        >
+          <article
+            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            id="books"
+            data-reveal
+          >
+            <div
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+            >
+              <span>۰۱ / عمیق بخوانید</span><span>↗</span>
+            </div>
+            <div
+              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+            >
+              <svg
+                class="absolute inset-0 size-full"
+                viewBox="0 0 200 100"
+                aria-hidden="true"
+              >
+                <path
+                  d="M52 75V22q19-8 40 4v50q-21-12-40-1Zm96 0V22q-19-8-40 4v50q21-12 40-1Z M92 26q8-4 16 0v49q-8-4-16 0M61 34q12-3 23 3M61 43q12-3 23 3M116 36q12-5 22-2M116 45q12-5 22-2M37 80h126"
+                />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-base font-semibold tracking-[-0.045em]"
+            >
+              کتاب‌ها و آثار مکتوب
+            </h3>
+            <p
+              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+            >
+              ایده‌ها و چارچوب‌های جامع برای درک معماری کسب‌وکار و نظام‌های
+              برند.
+            </p>
+            <a
+              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              href="#contact"
+              >مشاهده آثار
+              <span class="text-base text-[var(--accent)]">←</span></a
+            >
+          </article>
+
+          <article
+            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            id="articles"
+            data-reveal
+          >
+            <div
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+            >
+              <span>۰۲ / شفاف بیندیشید</span><span>↗</span>
+            </div>
+            <div
+              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+            >
+              <svg
+                class="absolute inset-0 size-full"
+                viewBox="0 0 200 100"
+                aria-hidden="true"
+              >
+                <path
+                  d="M65 22h70v57H65zM75 32h50M75 41h39M75 50h45M75 59h32M75 68h42m-14 7 15-15 9 9-15 15-12 3Z"
+                />
+                <circle cx="100" cy="50" r="38" opacity=".3" />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-base font-semibold tracking-[-0.045em]"
+            >
+              مقالات و یادداشت‌ها
+            </h3>
+            <p
+              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+            >
+              دیدگاه‌هایی مبتنی بر پژوهش درباره انتخاب‌هایی که مسیر کسب‌وکارها و
+              برندها را شکل می‌دهند.
+            </p>
+            <a
+              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              href="#contact"
+              >مطالعه مقالات
+              <span class="text-base text-[var(--accent)]">←</span></a
+            >
+          </article>
+
+          <article
+            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            id="podcasts"
+            data-reveal
+          >
+            <div
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+            >
+              <span>۰۳ / به ایده‌ها گوش دهید</span><span>↗</span>
+            </div>
+            <div
+              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+            >
+              <svg
+                class="absolute inset-0 size-full"
+                viewBox="0 0 200 100"
+                aria-hidden="true"
+              >
+                <path
+                  d="M100 20v14M82 27v28a18 18 0 0 0 36 0V27a18 18 0 0 0-36 0Z M66 48v7a34 34 0 0 0 68 0v-7M100 89V72m-15 17h30M41 32v38M52 22v57M63 40v22M137 40v22M148 22v57M159 32v38"
+                  opacity=".8"
+                />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-base font-semibold tracking-[-0.045em]"
+            >
+              پادکست‌ها و گفت‌وگوها
+            </h3>
+            <p
+              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+            >
+              گفت‌وگوها، سخنرانی‌ها و نشست‌های ضبط‌شده درباره تفکر راهبردی در
+              کسب‌وکار.
+            </p>
+            <a
+              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              href="#contact"
+              >شنیدن و تماشا
+              <span class="text-base text-[var(--accent)]">←</span></a
+            >
+          </article>
+
+          <article
+            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            id="learning"
+            data-reveal
+          >
+            <div
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+            >
+              <span>۰۴ / با عمل بیاموزید</span><span>↗</span>
+            </div>
+            <div
+              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+            >
+              <svg
+                class="absolute inset-0 size-full"
+                viewBox="0 0 200 100"
+                aria-hidden="true"
+              >
+                <rect x="54" y="22" width="92" height="57" rx="5" />
+                <path
+                  d="M65 35h29v13H65zM105 35h29M105 42h23M65 56h69M65 65h51M45 85h110"
+                />
+              </svg>
+            </div>
+            <h3
+              class="m-0 font-display text-base font-semibold tracking-[-0.045em]"
+            >
+              دوره‌ها و کارگاه‌ها
+            </h3>
+            <p
+              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+            >
+              یادگیری ساختاریافته برای دانشجویان، متخصصان، مدیران و تیم‌ها.
+            </p>
+            <a
+              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              href="#contact"
+              >آشنایی با برنامه‌های آموزشی
+              <span class="text-base text-[var(--accent)]">←</span></a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="mx-auto mb-[100px] grid w-[min(1200px,calc(100%-56px))] min-w-0 grid-cols-[minmax(0,0.83fr)_minmax(0,1.17fr)] items-center gap-[35px] rounded-[28px] border border-[var(--glass-border)] bg-[var(--glass)] p-[clamp(22px,4vw,45px)] shadow-[var(--card-shadow)] backdrop-blur-xl max-[720px]:mb-[70px] max-[720px]:w-[calc(100%-32px)] max-[720px]:grid-cols-1 max-[720px]:gap-[23px] max-[720px]:rounded-[22px] max-[720px]:p-4"
+        id="about"
+        data-reveal
+      >
+        <div
+          class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[linear-gradient(145deg,rgba(10,42,44,0.5),rgba(189,208,194,0.22))] max-[720px]:min-h-[220px]"
+          aria-hidden="true"
+        >
+          <div
+            class="absolute inset-5 rounded-[14px] border border-white/30"
+          ></div>
+          <svg class="absolute inset-0 size-full" viewBox="0 0 460 300">
+            <path
+              d="M38 232h384M56 219h348M80 203h300M100 185h260M115 168h230L230 70Z M123 168 230 78l107 90M135 172v47m26-47v47m26-47v47m86-47v47m26-47v47m26-47v47M145 219h170M135 229h190"
+            />
+            <circle cx="230" cy="118" r="19" />
+            <circle cx="230" cy="118" r="11" />
+            <path d="M212 118h36M230 100v36M37 251h386" />
+          </svg>
+        </div>
+
+        <div class="min-w-0">
+          <p
+            class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+          >
+            اندیشه‌پرداز این چارچوب
+          </p>
+          <h2
+            class="m-0 max-w-[560px] font-display text-[clamp(31px,4.2vw,49px)] font-semibold leading-[1.08] tracking-[-0.065em]"
+          >
+            عمق دانشگاهی؛<br />
+            <em
+              class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+              >نگاهی کاربردی.</em
+            >
+          </h2>
+          <p
+            class="mt-[17px] max-w-[590px] text-xs leading-[1.9] text-[var(--muted)]"
+          >
+            دکتر سید مرتضی عظیم‌زاده به بررسی پیوندهای میان طراحی کسب‌وکار،
+            معماری برند و رشد راهبردی می‌پردازد. این وب‌سایت مجموعه‌ای از
+            فعالیت‌ها و اندیشه‌های او را در یک مکان گرد هم می‌آورد؛ فضایی برای
+            ایده‌ها، پژوهش، آموزش و گفت‌وگو.
+          </p>
+
+          <div class="mt-[22px] grid grid-cols-3 gap-2 max-[720px]:grid-cols-1">
+            <div
+              class="min-w-0 rounded-xl border border-[var(--line)] bg-[var(--glass)] p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
+            >
+              <strong class="block font-display text-[11px] font-semibold"
+                >پژوهش</strong
+              >
+              <small
+                class="mt-[5px] block text-[8px] leading-[1.45] text-[var(--muted)] max-[720px]:mt-0 max-[720px]:text-right"
+                >اندیشه مبتنی بر شواهد</small
+              >
+            </div>
+            <div
+              class="min-w-0 rounded-xl border border-[var(--line)] bg-[var(--glass)] p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
+            >
+              <strong class="block font-display text-[11px] font-semibold"
+                >آموزش</strong
+              >
+              <small
+                class="mt-[5px] block text-[8px] leading-[1.45] text-[var(--muted)] max-[720px]:mt-0 max-[720px]:text-right"
+                >دسترس‌پذیر کردن ایده‌ها</small
+              >
+            </div>
+            <div
+              class="min-w-0 rounded-xl border border-[var(--line)] bg-[var(--glass)] p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
+            >
+              <strong class="block font-display text-[11px] font-semibold"
+                >عمل</strong
+              >
+              <small
+                class="mt-[5px] block text-[8px] leading-[1.45] text-[var(--muted)] max-[720px]:mt-0 max-[720px]:text-right"
+                >چارچوب‌هایی برای اقدام</small
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
       <section
+        class="mx-auto mb-[70px] flex w-[min(1200px,calc(100%-56px))] items-center justify-between gap-[25px] rounded-3xl border border-[var(--glass-border)] bg-[var(--glass)] p-[clamp(26px,4vw,48px)] shadow-[var(--card-shadow)] backdrop-blur-xl max-[720px]:mb-[45px] max-[720px]:w-[calc(100%-32px)] max-[720px]:flex-col max-[720px]:items-start max-[720px]:rounded-[20px]"
         id="contact"
-        class="contact-section relative overflow-hidden bg-forest text-white"
+        data-reveal
       >
-        <div class="contact-decoration" aria-hidden="true"></div>
-
-        <div
-          class="relative mx-auto grid max-w-[1320px] gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1fr_.8fr] lg:items-center lg:gap-20 lg:px-10 lg:py-24"
-        >
-          <div data-reveal>
-            <p class="section-kicker section-kicker-light">
-              <span class="kicker-dash"></span>
-              <span data-i18n="contact.kicker">آغاز یک گفت‌وگو</span>
-            </p>
-
-            <h2 class="section-title mt-5 max-w-3xl">
-              <span data-i18n="contact.titleStart"
-                >مسئله‌تان را دقیق‌تر ببینیم؛</span
-              >
-              <span class="text-gold" data-i18n="contact.titleHighlight"
-                >بعد تصمیم بگیریم.</span
-              >
-            </h2>
-
-            <p
-              class="mt-6 max-w-xl text-base leading-8 text-white/70"
-              data-i18n="contact.description"
+        <div class="min-w-0">
+          <p
+            class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+          >
+            ایده‌ها در گفت‌وگو رشد می‌کنند
+          </p>
+          <h2
+            class="m-0 max-w-[700px] font-display text-[clamp(28px,4vw,43px)] font-semibold leading-[1.08] tracking-[-0.065em]"
+          >
+            <span data-i18n="contact.headingBefore">
+              بیایید تصویری روشن‌تر از
+            </span>
+            <em
+              class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+              data-i18n="contact.headingEmphasis"
+              >کسب‌وکار</em
             >
-              برای مشاوره، سخنرانی، همکاری پژوهشی یا گفت‌وگوی حرفه‌ای، موضوع
-              موردنظر را با من در میان بگذارید.
-            </p>
-
-            <div class="mt-8 flex flex-wrap gap-3 text-xs text-white/70">
-              <span class="contact-pill" data-i18n="contact.pillConsulting"
-                >مشاوره</span
-              >
-              <span class="contact-pill" data-i18n="contact.pillSpeaking"
-                >سخنرانی</span
-              >
-              <span class="contact-pill" data-i18n="contact.pillAcademic"
-                >همکاری علمی</span
-              >
-            </div>
-          </div>
-
-          <form id="contact-form" class="contact-form" data-reveal>
-            <div class="grid gap-4 sm:grid-cols-2">
-              <label>
-                <span data-i18n="contact.nameLabel">نام و نام خانوادگی</span>
-                <input
-                  name="name"
-                  autocomplete="name"
-                  required
-                  placeholder="نام شما"
-                  data-i18n-attr="placeholder:contact.namePlaceholder"
-                />
-              </label>
-
-              <label>
-                <span data-i18n="contact.contactLabel"
-                  >ایمیل یا شماره تماس</span
-                >
-                <input
-                  name="contact"
-                  required
-                  placeholder="راه ارتباطی"
-                  data-i18n-attr="placeholder:contact.contactPlaceholder"
-                />
-              </label>
-            </div>
-
-            <label class="mt-4 block">
-              <span data-i18n="contact.topicLabel">موضوع درخواست</span>
-              <select name="topic" required>
-                <option
-                  value=""
-                  disabled
-                  selected
-                  data-i18n="contact.topicPlaceholder"
-                >
-                  یک گزینه انتخاب کنید
-                </option>
-                <option value="consulting" data-i18n="contact.topicConsultation">
-                  درخواست مشاوره
-                </option>
-                <option value="speaking" data-i18n="contact.topicSpeaking">
-                  دعوت به سخنرانی یا کارگاه
-                </option>
-                <option value="academic" data-i18n="contact.topicResearch">
-                  همکاری علمی و پژوهشی
-                </option>
-                <option value="other" data-i18n="contact.topicOther">
-                  سایر موارد
-                </option>
-              </select>
-            </label>
-
-            <label class="mt-4 block">
-              <span data-i18n="contact.messageLabel">شرح کوتاه درخواست</span>
-              <textarea
-                name="message"
-                rows="3"
-                required
-                placeholder="در چند جمله درباره مسئله یا پیشنهاد همکاری بنویسید."
-                data-i18n-attr="placeholder:contact.messagePlaceholder"
-              ></textarea>
-            </label>
-
-            <button
-              class="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-full bg-gold px-6 py-4 text-sm font-extrabold text-ink transition hover:-translate-y-0.5 hover:bg-white"
-              type="submit"
-            >
-              <span data-i18n="contact.submit">ثبت درخواست اولیه</span>
-              <span aria-hidden="true">←</span>
-            </button>
-
-            <p
-              id="form-status"
-              class="form-status hidden"
-              role="status"
-              aria-live="polite"
-            ></p>
-
-            <p
-              class="mt-3 text-[11px] leading-6 text-white/45"
-              data-i18n="contact.formDisclaimer"
-            >
-              فرم در این نمونه نمایشی است و تا زمان اتصال به بک‌اند یا سرویس
-              ایمیل، داده‌ای ارسال نمی‌کند.
-            </p>
-          </form>
+            <span data-i18n="contact.headingAfter">بسازیم.</span>
+          </h2>
+          <p
+            class="mt-3 max-w-[570px] text-[11px] leading-[1.8] text-[var(--muted)]"
+          >
+            برای همکاری‌های دانشگاهی، دعوت به سخنرانی، برگزاری کارگاه و گفت‌وگو
+            درباره معماری برند و کسب‌وکار.
+          </p>
         </div>
+        <a
+          class="inline-flex min-h-[47px] shrink-0 items-center justify-center gap-3 rounded-[13px] bg-[var(--button-bg)] px-[17px] text-[11px] font-bold text-[var(--button-text)] shadow-[0_9px_24px_rgba(18,50,52,0.12)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(18,50,52,0.17)]"
+          href="mailto:hello@example.com"
+        >
+          آغاز گفت‌وگو <span aria-hidden="true">↗</span>
+        </a>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer bg-ink text-white/70">
+    <footer
+      class="border-t border-[var(--line)] bg-[var(--glass)] backdrop-blur-xl"
+    >
       <div
-        class="mx-auto flex max-w-[1320px] flex-col gap-5 px-5 py-7 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10"
+        class="mx-auto flex min-h-[100px] w-[min(1200px,calc(100%-56px))] items-center justify-between gap-6 max-[720px]:w-[calc(100%-32px)] max-[720px]:flex-col max-[720px]:items-start max-[720px]:justify-center max-[720px]:gap-[18px] max-[720px]:py-[23px]"
       >
-        <a
-          class="flex items-center gap-3"
-          href="#home"
-          aria-label="صفحه اصلی"
-          data-i18n-attr="aria-label:nav.home"
-        >
-          <span
-            class="grid size-9 place-items-center rounded-full bg-gold text-sm font-black text-ink"
-            aria-hidden="true"
-            >د</span
-          >
-          <span>
-            <strong
-              class="block text-sm text-white"
-              data-i18n="footer.brandName"
-              >دکتر نام استاد</strong
-            >
-            <small class="text-[10px]" data-i18n="brand.tagline"
-              >استراتژی برند · طراحی کسب‌وکار</small
-            >
-          </span>
-        </a>
+        <div>
+          <div class="font-display text-xs font-semibold">
+            دکتر سید مرتضی عظیم‌زاده
+          </div>
+          <div class="mt-[5px] text-[9px] text-[var(--muted)]">
+            عمارت کسب‌وکار · معماری کسب‌وکار و برند
+          </div>
+        </div>
 
-        <p class="text-xs">
-          © <span id="current-year"></span>
-          <span data-i18n="footer.copyright">تمام حقوق محفوظ است.</span>
-        </p>
+        <div class="flex flex-wrap gap-[19px] text-[10px] text-[var(--muted)]">
+          <a class="hover:text-[var(--ink)]" href="#home">بازگشت به بالا ↑</a>
+          <a class="hover:text-[var(--ink)]" href="#books">کتاب‌ها</a>
+          <a class="hover:text-[var(--ink)]" href="#articles">مقالات</a>
+          <a class="hover:text-[var(--ink)]" href="#podcasts">پادکست‌ها</a>
+          <a class="hover:text-[var(--ink)]" href="#learning">دوره‌ها</a>
+        </div>
 
-        <a
-          href="#home"
-          class="inline-flex items-center gap-2 text-xs font-bold transition hover:text-gold"
-        >
-          <span data-i18n="footer.backToTop">بازگشت به بالا</span>
-          <span aria-hidden="true">↑</span>
-        </a>
+        <div class="text-[9px] text-[var(--muted)]">
+          © <span id="year"></span> تمامی حقوق محفوظ است.
+        </div>
       </div>
     </footer>
 
-    <!-- Article modal -->
-    <div
-      id="article-modal"
-      class="modal-shell hidden"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-      aria-label="نمایش مقاله"
-      data-i18n-attr="aria-label:modal.label"
-    >
-      <div class="modal-panel">
-        <button
-          id="modal-close"
-          class="modal-close"
-          type="button"
-          aria-label="بستن پنجره"
-          data-i18n-attr="aria-label:common.close"
-        >
-          ×
-        </button>
-
-        <p id="modal-category" class="section-kicker">
-          <span class="kicker-dash"></span>
-          <span data-i18n="modal.category">یادداشت نمونه</span>
-        </p>
-
-        <h2
-          id="modal-title"
-          class="mt-4 text-2xl font-black leading-relaxed"
-        ></h2>
-
-        <div id="modal-body" class="modal-body mt-6"></div>
-
-        <p
-          class="mt-6 text-xs leading-6 text-ink/45"
-          data-i18n="modal.disclaimer"
-        >
-          این متن صرفاً برای نمایش تعامل رابط کاربری نوشته شده و باید با محتوای
-          تأییدشده جایگزین شود.
-        </p>
-      </div>
-    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
