@@ -17,10 +17,10 @@
     />
   </head>
   <body
-    class="m-0 min-w-[320px] overflow-x-clip font-sans text-[var(--ink)] antialiased transition-colors duration-300"
+    class="m-0 min-w-80 overflow-x-clip font-sans text-(--ink) antialiased transition-colors duration-300"
   >
     <header
-      class="sticky top-3 z-50 mx-auto mt-3 flex min-h-[72px] w-[min(1240px,calc(100%-28px))] items-center justify-between gap-4 rounded-[18px] border border-[var(--glass-border)] bg-[var(--nav-glass)] px-5 py-2.5 shadow-[0_12px_32px_rgba(21,53,54,0.07)] backdrop-blur-2xl max-[960px]:gap-3 max-[720px]:top-[7px] max-[720px]:mt-[7px] max-[720px]:min-h-[62px] max-[720px]:w-[calc(100%-14px)] max-[720px]:rounded-[15px] max-[720px]:px-3"
+      class="sticky top-3 z-50 mx-auto mt-3 flex min-h-18 w-[min(1240px,calc(100%-28px))] items-center justify-between gap-4 rounded-[18px] border border-(--glass-border) bg-(--nav-glass) px-5 py-2.5 shadow-[0_12px_32px_rgba(21,53,54,0.07)] backdrop-blur-2xl max-[960px]:gap-3 max-[720px]:top-1.75 max-[720px]:mt-1.75 max-[720px]:min-h-15.5 max-[720px]:w-[calc(100%-14px)] max-[720px]:rounded-[15px] max-[720px]:px-3"
       aria-label="سربرگ اصلی"
     >
       <a
@@ -29,10 +29,10 @@
         aria-label="صفحه اصلی عمارت کسب‌وکار"
       >
         <span
-          class="grid size-10 shrink-0 place-items-center rounded-xl border border-[var(--line)] bg-[var(--glass)] text-[var(--accent)] max-[720px]:size-[34px]"
+          class="grid size-10 shrink-0 place-items-center rounded-xl border border-(--line) bg-(--glass) text-(--accent) max-[720px]:size-8.5"
           aria-hidden="true"
         >
-          <svg class="size-[25px] max-[720px]:size-[22px]" viewBox="0 0 32 32">
+          <svg class="size-6.25 max-[720px]:size-5.5" viewBox="0 0 32 32">
             <path
               d="M4 12 16 4l12 8M6 13h20M8 14v11M13 14v11M19 14v11M24 14v11M5 26h22M3 29h26"
               fill="none"
@@ -57,7 +57,7 @@
             دکتر سید مرتضی عظیم‌زاده
           </strong>
           <small
-            class="mt-1 block whitespace-nowrap text-[9px] text-[var(--muted)] max-[720px]:text-[8px]"
+            class="mt-1 block whitespace-nowrap text-[9px] text-(--muted) max-[720px]:text-[8px]"
           >
             معماری کسب‌وکار و برند
           </small>
@@ -70,37 +70,37 @@
         aria-label="ناوبری اصلی"
       >
         <a
-          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-(--ink-soft) transition-colors hover:text-(--accent)"
           href="#mansion"
           data-i18n="nav.mansion"
           >عمارت کسب‌وکار</a
         >
         <a
-          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-(--ink-soft) transition-colors hover:text-(--accent)"
           href="#library"
           data-i18n="nav.library"
           >کتابخانه</a
         >
         <a
-          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-(--ink-soft) transition-colors hover:text-(--accent)"
           href="#about"
           data-i18n="nav.about"
           >درباره</a
         >
         <a
-          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-(--ink-soft) transition-colors hover:text-(--accent)"
           href="#books"
           data-i18n="nav.books"
           >کتاب‌ها</a
         >
         <a
-          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-(--ink-soft) transition-colors hover:text-(--accent)"
           href="#articles"
           data-i18n="nav.articles"
           >مقالات</a
         >
         <a
-          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+          class="whitespace-nowrap rounded-lg py-2 text-[11px] text-(--ink-soft) transition-colors hover:text-(--accent)"
           href="#learning"
           data-i18n="nav.learning"
           >آموزش</a
@@ -111,7 +111,7 @@
         <button
           id="language-toggle"
           type="button"
-          class="flex min-h-9 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--glass)] px-3 text-[11px] font-semibold text-[var(--ink)] transition-colors hover:border-[var(--accent)]"
+          class="flex min-h-9 items-center justify-center rounded-xl border border-(--line) bg-(--glass) px-3 text-[11px] font-semibold text-(--ink) transition-colors hover:border-(--accent)"
           aria-label="Switch language to English"
           lang="en"
         >
@@ -121,7 +121,7 @@
         <button
           id="theme-toggle"
           type="button"
-          class="flex min-h-9 items-center gap-1.5 rounded-xl border border-[var(--line)] bg-[var(--glass)] px-3 text-[10px] text-[var(--ink)] transition-colors hover:border-[var(--accent)] max-[720px]:px-2"
+          class="flex min-h-9 items-center gap-1.5 rounded-xl border border-(--line) bg-(--glass) px-3 text-[10px] text-(--ink) transition-colors hover:border-(--accent) max-[720px]:px-2"
           aria-label="تغییر به حالت تاریک"
         >
           <svg
@@ -144,7 +144,7 @@
         <button
           id="menu-toggle"
           type="button"
-          class="hidden min-h-9 items-center justify-center rounded-xl border border-[var(--line)] bg-[var(--glass)] px-3 text-[11px] text-[var(--ink)] max-[960px]:inline-flex"
+          class="hidden min-h-9 items-center justify-center rounded-xl border border-(--line) bg-(--glass) px-3 text-[11px] text-(--ink) max-[960px]:inline-flex"
           aria-expanded="false"
           aria-controls="mobile-nav"
           aria-label="باز کردن منو"
@@ -155,41 +155,41 @@
 
       <nav
         id="mobile-nav"
-        class="absolute left-0 right-0 top-[calc(100%+9px)] z-50 hidden grid-cols-2 gap-1 rounded-2xl border border-[var(--glass-border)] bg-[var(--glass-strong)] p-2.5 shadow-[var(--shadow)] backdrop-blur-2xl min-[961px]:hidden"
+        class="absolute left-0 right-0 top-[calc(100%+9px)] z-50 hidden grid-cols-2 gap-1 rounded-2xl border border-(--glass-border) bg-(--glass-strong) p-2.5 shadow-(--shadow) backdrop-blur-2xl min-[961px]:hidden"
         aria-label="ناوبری موبایل"
       >
         <a
-          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          class="rounded-xl px-3 py-3 text-xs text-(--ink-soft) hover:bg-(--accent-soft)"
           href="#mansion"
           data-i18n="nav.mansion"
           >عمارت کسب‌وکار</a
         >
         <a
-          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          class="rounded-xl px-3 py-3 text-xs text-(--ink-soft) hover:bg-(--accent-soft)"
           href="#library"
           data-i18n="nav.library"
           >کتابخانه</a
         >
         <a
-          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          class="rounded-xl px-3 py-3 text-xs text-(--ink-soft) hover:bg-(--accent-soft)"
           href="#about"
           data-i18n="nav.about"
           >درباره</a
         >
         <a
-          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          class="rounded-xl px-3 py-3 text-xs text-(--ink-soft) hover:bg-(--accent-soft)"
           href="#books"
           data-i18n="nav.books"
           >کتاب‌ها</a
         >
         <a
-          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          class="rounded-xl px-3 py-3 text-xs text-(--ink-soft) hover:bg-(--accent-soft)"
           href="#articles"
           data-i18n="nav.articles"
           >مقالات</a
         >
         <a
-          class="rounded-xl px-3 py-3 text-xs text-[var(--ink-soft)] hover:bg-[var(--accent-soft)]"
+          class="rounded-xl px-3 py-3 text-xs text-(--ink-soft) hover:bg-(--accent-soft)"
           href="#learning"
           data-i18n="nav.learning"
           >آموزش</a
@@ -199,45 +199,45 @@
 
     <main>
       <section
-        class="relative mx-auto grid min-h-[670px] w-[min(1200px,calc(100%-56px))] grid-cols-[minmax(0,1fr)_minmax(0,1.02fr)] items-center gap-[clamp(22px,4vw,60px)] pt-[75px] pb-[78px] max-[960px]:min-h-[590px] max-[960px]:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] max-[960px]:gap-[22px] max-[720px]:w-[calc(100%-32px)] max-[720px]:min-h-0 max-[720px]:grid-cols-1 max-[720px]:gap-6 max-[720px]:pt-16 max-[720px]:pb-[63px]"
+        class="relative mx-auto grid min-h-167.5 w-[min(1200px,calc(100%-56px))] grid-cols-[minmax(0,1fr)_minmax(0,1.02fr)] items-center gap-[clamp(22px,4vw,60px)] pt-18.75 pb-19.5 max-[960px]:min-h-147.5 max-[960px]:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] max-[960px]:gap-5.5 max-[720px]:w-[calc(100%-32px)] max-[720px]:min-h-0 max-[720px]:grid-cols-1 max-[720px]:gap-6 max-[720px]:pt-16 max-[720px]:pb-15.75"
         id="home"
       >
-        <div class="relative z-10 min-w-0 py-[10px] pb-[18px]" data-reveal>
+        <div class="relative z-10 min-w-0 py-2.5 pb-4.5" data-reveal>
           <p
-            class="mb-[22px] flex items-center gap-[11px] text-[10px] font-bold uppercase tracking-[0.19em] text-[var(--ink-soft)] before:block before:h-px before:w-[34px] before:bg-[var(--accent)]"
+            class="mb-5.5 flex items-center gap-2.75 text-[10px] font-bold uppercase tracking-[0.19em] text-(--ink-soft) before:block before:h-px before:w-8.5 before:bg-(--accent)"
           >
             چارچوبی برای ساخت کسب‌وکارهای معنادار
           </p>
 
           <h1
-            class="m-0 max-w-[690px] font-display text-[clamp(44px,6vw,78px)] font-bold leading-[0.99] tracking-[-0.075em] text-[var(--hero-ink)] max-[720px]:text-[clamp(45px,12vw,68px)]"
+            class="m-0 max-w-172.5 font-display text-[clamp(44px,6vw,78px)] font-bold leading-[0.99] tracking-[-0.075em] text-(--hero-ink) max-[720px]:text-[clamp(45px,12vw,68px)]"
           >
             هر کسب‌وکاری ساختاری دارد.<br />
             به آن
             <em
-              class="font-editorial text-[clamp(45px,6vw,79px)] font-medium leading-[1.05] tracking-[-0.06em] text-[var(--accent)] max-[720px]:text-[1em]"
+              class="font-editorial text-[clamp(45px,6vw,79px)] font-medium leading-[1.05] tracking-[-0.06em] text-(--accent) max-[720px]:text-[1em]"
               >معماری</em
             >
             ببخشید.
           </h1>
 
           <p
-            class="mt-[25px] max-w-[480px] text-sm leading-[1.9] text-[var(--hero-muted)] max-[720px]:mt-5 max-[720px]:text-[13px]"
+            class="mt-6.25 max-w-120 text-sm leading-[1.9] text-(--hero-muted) max-[720px]:mt-5 max-[720px]:text-[13px]"
           >
             با ایده‌های شکل‌دهنده به عمارت کسب‌وکار آشنا شوید؛ رویکردی یکپارچه
             برای اندیشیدن به بنیان کسب‌وکار، معنای برند و ارتباط با بازار که با
             پژوهش، آموزش و بینش کاربردی به هم پیوند می‌خورند.
           </p>
 
-          <div class="mt-[29px] flex flex-wrap items-center gap-[11px]">
+          <div class="mt-7.25 flex flex-wrap items-center gap-2.75">
             <a
-              class="inline-flex min-h-[47px] items-center justify-center gap-3 rounded-[13px] bg-[var(--button-bg)] px-[17px] text-[11px] font-bold text-[var(--button-text)] shadow-[0_9px_24px_rgba(18,50,52,0.12)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(18,50,52,0.17)]"
+              class="inline-flex min-h-11.75 items-center justify-center gap-3 rounded-[13px] bg-(--button-bg) px-4.25 text-[11px] font-bold text-(--button-text) shadow-[0_9px_24px_rgba(18,50,52,0.12)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(18,50,52,0.17)]"
               href="#mansion"
             >
               کاوش در عمارت کسب‌وکار <span aria-hidden="true">↗</span>
             </a>
             <a
-              class="inline-flex min-h-[47px] items-center justify-center gap-3 rounded-[13px] border border-[var(--glass-border)] bg-[var(--glass)] px-[17px] text-[11px] font-bold text-[var(--ink)] transition hover:-translate-y-0.5"
+              class="inline-flex min-h-11.75 items-center justify-center gap-3 rounded-[13px] border border-(--glass-border) bg-(--glass) px-4.25 text-[11px] font-bold text-(--ink) transition hover:-translate-y-0.5"
               href="#library"
             >
               ورود به کتابخانه <span aria-hidden="true">←</span>
@@ -245,17 +245,17 @@
           </div>
 
           <div
-            class="mt-9 flex items-center gap-[11px] text-[10px] text-[var(--muted)]"
+            class="mt-9 flex items-center gap-2.75 text-[10px] text-(--muted)"
           >
             <span
-              class="size-[7px] rounded-full bg-[var(--accent)] shadow-[0_0_0_5px_var(--accent-soft)]"
+              class="size-1.75 rounded-full bg-(--accent) shadow-[0_0_0_5px_var(--accent-soft)]"
             ></span>
             پژوهش · استراتژی · آموزش
           </div>
         </div>
 
         <div
-          class="relative grid min-h-[500px] min-w-0 place-items-center max-[720px]:min-h-[375px]"
+          class="relative grid min-h-125 min-w-0 place-items-center max-[720px]:min-h-93.75"
           data-reveal
           aria-label="تصویر معماری عمارت کسب‌وکار"
         >
@@ -264,15 +264,15 @@
           ></div>
 
           <div
-            class="relative h-[435px] w-full max-w-[590px] overflow-hidden rounded-[28px] border border-[var(--glass-border)] bg-[linear-gradient(145deg,rgba(249,252,248,0.18),rgba(249,252,248,0.04))] shadow-[var(--shadow)] backdrop-blur-xl max-[960px]:h-[390px] max-[720px]:h-[330px] max-[720px]:rounded-[22px]"
+            class="relative h-108.75 w-full max-w-147.5 overflow-hidden rounded-[28px] border border-(--glass-border) bg-[linear-gradient(145deg,rgba(249,252,248,0.18),rgba(249,252,248,0.04))] shadow-(--shadow) backdrop-blur-xl max-[960px]:h-97.5 max-[720px]:h-82.5 max-[720px]:rounded-[22px]"
           >
             <span
-              class="absolute left-[22px] top-5 text-[8px] tracking-[0.19em] text-[var(--muted)] max-[720px]:left-4 max-[720px]:top-[15px] max-[720px]:text-[7px]"
+              class="absolute left-5.5 top-5 text-[8px] tracking-[0.19em] text-(--muted) max-[720px]:left-4 max-[720px]:top-3.75 max-[720px]:text-[7px]"
               >معماری کسب‌وکار</span
             >
 
             <svg
-              class="absolute inset-x-2 top-[18px] h-[calc(100%-40px)] w-[calc(100%-16px)]"
+              class="absolute inset-x-2 top-4.5 h-[calc(100%-40px)] w-[calc(100%-16px)]"
               id="mansion-illustration"
               viewBox="0 0 560 420"
               role="img"
@@ -315,48 +315,48 @@
             </svg>
 
             <span
-              class="absolute bottom-[18px] right-[22px] text-[8px] tracking-[0.15em] text-[var(--muted)] max-[720px]:right-[14px] max-[720px]:bottom-3 max-[720px]:text-[7px]"
+              class="absolute bottom-4.5 right-5.5 text-[8px] tracking-[0.15em] text-(--muted) max-[720px]:right-3.5 max-[720px]:bottom-3 max-[720px]:text-[7px]"
               >عمارت کسب‌وکار / ۰۱</span
             >
           </div>
 
           <div
-            class="absolute -right-[11px] bottom-[6px] w-[244px] rotate-[2deg] rounded-[18px] border border-[var(--glass-border)] bg-[var(--glass)] p-4 shadow-[var(--card-shadow)] backdrop-blur-xl max-[960px]:right-[-3px] max-[720px]:right-0 max-[720px]:bottom-[-10px] max-[720px]:w-[218px] max-[720px]:rounded-[15px] max-[720px]:p-3"
+            class="absolute -right-2.75 bottom-1.5 w-61 rotate-[2deg] rounded-[18px] border border-(--glass-border) bg-(--glass) p-4 shadow-(--card-shadow) backdrop-blur-xl max-[960px]:right-[-3px] max-[720px]:right-0 max-[720px]:bottom-[-10px] max-[720px]:w-54.5 max-[720px]:rounded-[15px] max-[720px]:p-3"
           >
             <span
-              class="absolute -left-[45px] top-[25px] size-[92px] rounded-tl-full border-l border-t border-[var(--accent)] opacity-55 max-[720px]:hidden"
+              class="absolute -left-11.25 top-6.25 size-23 rounded-tl-full border-l border-t border-(--accent) opacity-55 max-[720px]:hidden"
               aria-hidden="true"
             ></span>
             <div
-              class="flex justify-between gap-2 text-[8px] uppercase tracking-[0.12em] text-[var(--muted)]"
+              class="flex justify-between gap-2 text-[8px] uppercase tracking-[0.12em] text-(--muted)"
             >
               <span>نظام کسب‌وکار</span><span>۰۱—۰۳</span>
             </div>
             <strong class="mt-2 block font-display text-[13px] font-semibold"
               >سه دروازه؛ یک کلِ به‌هم‌پیوسته</strong
             >
-            <div class="mt-[13px] grid grid-cols-3 gap-[7px]">
+            <div class="mt-3.25 grid grid-cols-3 gap-1.75">
               <div
-                class="rounded-[10px] border border-[var(--line)] bg-white/[0.08] px-1 py-[9px] text-center text-[8px] text-[var(--ink-soft)]"
+                class="rounded-[10px] border border-(--line) bg-white/[0.08] px-1 py-2.25 text-center text-[8px] text-(--ink-soft)"
               >
                 <span
-                  class="mx-auto mb-[7px] block size-[18px] rounded-full border border-[var(--accent)]"
+                  class="mx-auto mb-1.75 block size-4.5 rounded-full border border-(--accent)"
                 ></span
                 >بنیان
               </div>
               <div
-                class="rounded-[10px] border border-[var(--line)] bg-white/[0.08] px-1 py-[9px] text-center text-[8px] text-[var(--ink-soft)]"
+                class="rounded-[10px] border border-(--line) bg-white/[0.08] px-1 py-2.25 text-center text-[8px] text-(--ink-soft)"
               >
                 <span
-                  class="mx-auto mb-[7px] block size-[18px] rotate-45 rounded-[5px] border border-[var(--accent)]"
+                  class="mx-auto mb-1.75 block size-4.5 rotate-45 rounded-[5px] border border-(--accent)"
                 ></span
                 >برند
               </div>
               <div
-                class="rounded-[10px] border border-[var(--line)] bg-white/[0.08] px-1 py-[9px] text-center text-[8px] text-[var(--ink-soft)]"
+                class="rounded-[10px] border border-(--line) bg-white/[0.08] px-1 py-2.25 text-center text-[8px] text-(--ink-soft)"
               >
                 <span
-                  class="mx-auto mb-[7px] block size-[18px] rounded-full border border-[var(--accent)] after:mx-auto after:mt-[7px] after:block after:size-[3px] after:rounded-full after:bg-[var(--accent)]"
+                  class="mx-auto mb-1.75 block size-4.5 rounded-full border border-(--accent) after:mx-auto after:mt-1.75 after:block after:size-0.75 after:rounded-full after:bg-(--accent)"
                 ></span
                 >بازار
               </div>
@@ -365,25 +365,25 @@
         </div>
 
         <div
-          class="absolute bottom-[19px] left-0 right-0 flex items-center justify-between gap-4 text-[9px] uppercase tracking-[0.1em] text-[var(--muted)] max-[720px]:bottom-3 max-[720px]:text-[8px]"
+          class="absolute bottom-4.75 left-0 right-0 flex items-center justify-between gap-4 text-[9px] uppercase tracking-[0.1em] text-(--muted) max-[720px]:bottom-3 max-[720px]:text-[8px]"
         >
           <span>عمارت کسب‌وکار / چارچوبی یکپارچه</span>
-          <span class="h-px flex-1 bg-[var(--line)]"></span>
+          <span class="h-px flex-1 bg-(--line)"></span>
           <span>برای کاوش، به پایین بروید ↓</span>
         </div>
       </section>
 
       <section
-        class="mx-auto mb-[95px] grid w-[min(1200px,calc(100%-56px))] grid-cols-3 gap-[13px] max-[720px]:mb-[67px] max-[720px]:w-[calc(100%-32px)] max-[720px]:grid-cols-1 max-[720px]:gap-[9px]"
+        class="mx-auto mb-23.75 grid w-[min(1200px,calc(100%-56px))] grid-cols-3 gap-3.25 max-[720px]:mb-16.75 max-[720px]:w-[calc(100%-32px)] max-[720px]:grid-cols-1 max-[720px]:gap-2.25"
         aria-label="اصول بنیادین"
       >
         <article
-          class="relative min-h-[135px] overflow-hidden rounded-[19px] border border-[var(--glass-border)] bg-[var(--glass)] p-5 shadow-[var(--card-shadow)] backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-[var(--line)] after:content-[attr(data-number)] max-[720px]:min-h-[115px]"
+          class="relative min-h-33.75 overflow-hidden rounded-[19px] border border-(--glass-border) bg-(--glass) p-5 shadow-(--card-shadow) backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-(--line) after:content-[attr(data-number)] max-[720px]:min-h-28.75"
           data-number="01"
           data-reveal
         >
           <span
-            class="mb-[13px] block text-[9px] font-bold tracking-[0.16em] text-[var(--accent)]"
+            class="mb-3.25 block text-[9px] font-bold tracking-[0.16em] text-(--accent)"
             >بنیان کسب‌وکار</span
           >
           <strong
@@ -391,7 +391,7 @@
             >منطق زیربنایی کسب‌وکار را بسازید.</strong
           >
           <p
-            class="relative z-10 mt-2 max-w-[280px] text-[11px] leading-[1.65] text-[var(--muted)]"
+            class="relative z-10 mt-2 max-w-70 text-[11px] leading-[1.65] text-(--muted)"
           >
             هدف، مدل کسب‌وکار، توانمندی‌ها و انتخاب‌هایی که به کسب‌وکار ساختار
             می‌بخشند.
@@ -399,12 +399,12 @@
         </article>
 
         <article
-          class="relative min-h-[135px] overflow-hidden rounded-[19px] border border-[var(--glass-border)] bg-[var(--glass)] p-5 shadow-[var(--card-shadow)] backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-[var(--line)] after:content-[attr(data-number)] max-[720px]:min-h-[115px]"
+          class="relative min-h-33.75 overflow-hidden rounded-[19px] border border-(--glass-border) bg-(--glass) p-5 shadow-(--card-shadow) backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-(--line) after:content-[attr(data-number)] max-[720px]:min-h-28.75"
           data-number="02"
           data-reveal
         >
           <span
-            class="mb-[13px] block text-[9px] font-bold tracking-[0.16em] text-[var(--accent)]"
+            class="mb-3.25 block text-[9px] font-bold tracking-[0.16em] text-(--accent)"
             >برند کسب‌وکار</span
           >
           <strong
@@ -412,7 +412,7 @@
             >معنای برند را روشن و متمایز کنید.</strong
           >
           <p
-            class="relative z-10 mt-2 max-w-[280px] text-[11px] leading-[1.65] text-[var(--muted)]"
+            class="relative z-10 mt-2 max-w-70 text-[11px] leading-[1.65] text-(--muted)"
           >
             هویت، معماری برند و تجربه‌ای که کسب‌وکار را به انسان‌ها پیوند
             می‌دهد.
@@ -420,12 +420,12 @@
         </article>
 
         <article
-          class="relative min-h-[135px] overflow-hidden rounded-[19px] border border-[var(--glass-border)] bg-[var(--glass)] p-5 shadow-[var(--card-shadow)] backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-[var(--line)] after:content-[attr(data-number)] max-[720px]:min-h-[115px]"
+          class="relative min-h-33.75 overflow-hidden rounded-[19px] border border-(--glass-border) bg-(--glass) p-5 shadow-(--card-shadow) backdrop-blur-xl after:absolute after:-bottom-4 after:right-4 after:text-[66px] after:font-display after:font-semibold after:leading-none after:text-(--line) after:content-[attr(data-number)] max-[720px]:min-h-28.75"
           data-number="03"
           data-reveal
         >
           <span
-            class="mb-[13px] block text-[9px] font-bold tracking-[0.16em] text-[var(--accent)]"
+            class="mb-3.25 block text-[9px] font-bold tracking-[0.16em] text-(--accent)"
             >بازار کسب‌وکار</span
           >
           <strong
@@ -433,7 +433,7 @@
             >ارزش را به جهان پیرامون پیوند دهید.</strong
           >
           <p
-            class="relative z-10 mt-2 max-w-[280px] text-[11px] leading-[1.65] text-[var(--muted)]"
+            class="relative z-10 mt-2 max-w-70 text-[11px] leading-[1.65] text-(--muted)"
           >
             جایگاه‌یابی، مشتریان، روابط و تناسب پایدار با نیازهای بازار.
           </p>
@@ -441,16 +441,16 @@
       </section>
 
       <section
-        class="mx-auto w-[min(1200px,calc(100%-56px))] pt-[30px] pb-[100px] max-[720px]:w-[calc(100%-32px)] max-[720px]:pt-2 max-[720px]:pb-[70px]"
+        class="mx-auto w-[min(1200px,calc(100%-56px))] pt-7.5 pb-25 max-[720px]:w-[calc(100%-32px)] max-[720px]:pt-2 max-[720px]:pb-17.5"
         id="mansion"
       >
         <div
-          class="mb-[27px] flex items-end justify-between gap-[30px] max-[720px]:block"
+          class="mb-6.75 flex items-end justify-between gap-7.5 max-[720px]:block"
           data-reveal
         >
           <div>
             <p
-              class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+              class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-(--accent)"
             >
               یک عمارت · سه دروازه
             </p>
@@ -459,13 +459,13 @@
             >
               عمارت
               <em
-                class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+                class="font-editorial text-[1.04em] font-medium text-(--accent)"
                 >کسب‌وکار</em
               >
             </h2>
           </div>
           <p
-            class="mb-[3px] max-w-[330px] text-xs leading-[1.8] text-[var(--muted)] max-[720px]:mt-[15px]"
+            class="mb-0.75 max-w-82.5 text-xs leading-[1.8] text-(--muted) max-[720px]:mt-3.75"
           >
             سه خدمت جدا از هم نیستند؛ بلکه سه بُعد به‌هم‌پیوسته از یک
             کسب‌وکارند. هر دروازه به مجموعه‌ای رو‌به‌رشد از ایده‌ها، آثار مکتوب
@@ -474,20 +474,20 @@
         </div>
 
         <div
-          class="grid grid-cols-3 gap-[15px] max-[960px]:grid-cols-2 max-[720px]:grid-cols-1 max-[720px]:gap-[11px]"
+          class="grid grid-cols-3 gap-3.75 max-[960px]:grid-cols-2 max-[720px]:grid-cols-1 max-[720px]:gap-2.75"
         >
           <article
-            class="flex min-h-[355px] min-w-0 flex-col overflow-hidden rounded-[22px] border border-[var(--glass-border)] bg-[var(--glass)] p-[23px] shadow-[var(--card-shadow)] backdrop-blur-xl transition duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow)] max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-[19px]"
+            class="flex min-h-88.75 min-w-0 flex-col overflow-hidden rounded-[22px] border border-(--glass-border) bg-(--glass) p-5.75 shadow-(--card-shadow) backdrop-blur-xl transition duration-300 hover:-translate-y-1.25 hover:shadow-(--shadow) max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-4.75"
             data-reveal
           >
             <div class="flex items-center justify-between gap-3">
-              <span class="text-[9px] tracking-[0.15em] text-[var(--muted)]"
+              <span class="text-[9px] tracking-[0.15em] text-(--muted)"
                 >دروازه ۰۱ / نظام</span
               >
               <span
-                class="grid size-10 place-items-center rounded-[13px] border border-[var(--line)] text-[var(--accent)]"
+                class="grid size-10 place-items-center rounded-[13px] border border-(--line) text-(--accent)"
                 aria-hidden="true"
-                ><svg class="size-[23px]" viewBox="0 0 24 24">
+                ><svg class="size-5.75" viewBox="0 0 24 24">
                   <path
                     d="M3 8h18M5 8V5h14v3M6 9v10m4-10v10m4-10v10m4-10v10M3 20h18M2 22h20"
                     fill="none"
@@ -498,10 +498,10 @@
               ></span>
             </div>
             <div
-              class="relative my-4 flex h-[104px] items-center justify-center overflow-hidden rounded-[15px] border border-[var(--line)] bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-[135px] before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[14px] max-[720px]:h-[88px]"
+              class="relative my-4 flex h-26 items-center justify-center overflow-hidden rounded-[15px] border border-(--line) bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-33.75 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.5 max-[720px]:h-22"
             >
               <svg
-                class="relative z-10 h-[84px] w-[110px]"
+                class="relative z-10 h-21 w-27.5"
                 viewBox="0 0 130 90"
                 aria-hidden="true"
               >
@@ -516,45 +516,45 @@
               بنیان کسب‌وکار
             </h3>
             <p
-              class="my-[9px] mb-[17px] text-[11px] leading-[1.75] text-[var(--muted)]"
+              class="my-2.25 mb-4.25 text-[11px] leading-[1.75] text-(--muted)"
             >
               آنچه اجزای کسب‌وکار را به هم پیوند می‌دهد: هدف، مدل کسب‌وکار،
               استراتژی، توانمندی‌ها و منطق عملیاتی.
             </p>
-            <div class="mt-auto flex flex-wrap gap-[6px]">
+            <div class="mt-auto flex flex-wrap gap-1.5">
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >مدل کسب‌وکار</span
               >
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >استراتژی</span
               >
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >سازمان</span
               >
             </div>
             <a
-              class="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-[14px] text-[10px] font-bold"
+              class="mt-5 flex items-center justify-between border-t border-(--line) pt-3.5 text-[10px] font-bold"
               href="#library"
               >کاوش در بنیان کسب‌وکار
-              <span class="text-base text-[var(--accent)]">↗</span></a
+              <span class="text-base text-(--accent)">↗</span></a
             >
           </article>
 
           <article
-            class="flex min-h-[355px] min-w-0 flex-col overflow-hidden rounded-[22px] border border-[var(--glass-border)] bg-[var(--glass)] p-[23px] shadow-[var(--card-shadow)] backdrop-blur-xl transition duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow)] max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-[19px]"
+            class="flex min-h-88.75 min-w-0 flex-col overflow-hidden rounded-[22px] border border-(--glass-border) bg-(--glass) p-5.75 shadow-(--card-shadow) backdrop-blur-xl transition duration-300 hover:-translate-y-1.25 hover:shadow-(--shadow) max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-4.75"
             data-reveal
           >
             <div class="flex items-center justify-between gap-3">
-              <span class="text-[9px] tracking-[0.15em] text-[var(--muted)]"
+              <span class="text-[9px] tracking-[0.15em] text-(--muted)"
                 >دروازه ۰۲ / معنا</span
               >
               <span
-                class="grid size-10 place-items-center rounded-[13px] border border-[var(--line)] text-[var(--accent)]"
+                class="grid size-10 place-items-center rounded-[13px] border border-(--line) text-(--accent)"
                 aria-hidden="true"
-                ><svg class="size-[23px]" viewBox="0 0 24 24">
+                ><svg class="size-5.75" viewBox="0 0 24 24">
                   <circle
                     cx="12"
                     cy="12"
@@ -582,10 +582,10 @@
               ></span>
             </div>
             <div
-              class="relative my-4 flex h-[104px] items-center justify-center overflow-hidden rounded-[15px] border border-[var(--line)] bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-[135px] before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[14px] max-[720px]:h-[88px]"
+              class="relative my-4 flex h-26 items-center justify-center overflow-hidden rounded-[15px] border border-(--line) bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-33.75 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.5 max-[720px]:h-22"
             >
               <svg
-                class="relative z-10 h-[84px] w-[110px]"
+                class="relative z-10 h-21 w-27.5"
                 viewBox="0 0 130 90"
                 aria-hidden="true"
               >
@@ -604,45 +604,45 @@
               برند کسب‌وکار
             </h3>
             <p
-              class="my-[9px] mb-[17px] text-[11px] leading-[1.75] text-[var(--muted)]"
+              class="my-2.25 mb-4.25 text-[11px] leading-[1.75] text-(--muted)"
             >
               چگونگی شکل‌گیری هویت و معنای متمایز کسب‌وکار از طریق هویت برند،
               تجربه، معماری برند و اعتبار.
             </p>
-            <div class="mt-auto flex flex-wrap gap-[6px]">
+            <div class="mt-auto flex flex-wrap gap-1.5">
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >هویت برند</span
               >
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >معماری برند</span
               >
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >تجربه</span
               >
             </div>
             <a
-              class="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-[14px] text-[10px] font-bold"
+              class="mt-5 flex items-center justify-between border-t border-(--line) pt-3.5 text-[10px] font-bold"
               href="#library"
               >کاوش در دنیای برند
-              <span class="text-base text-[var(--accent)]">↗</span></a
+              <span class="text-base text-(--accent)">↗</span></a
             >
           </article>
 
           <article
-            class="flex min-h-[355px] min-w-0 flex-col overflow-hidden rounded-[22px] border border-[var(--glass-border)] bg-[var(--glass)] p-[23px] shadow-[var(--card-shadow)] backdrop-blur-xl transition duration-300 hover:-translate-y-[5px] hover:shadow-[var(--shadow)] max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-[19px]"
+            class="flex min-h-88.75 min-w-0 flex-col overflow-hidden rounded-[22px] border border-(--glass-border) bg-(--glass) p-5.75 shadow-(--card-shadow) backdrop-blur-xl transition duration-300 hover:-translate-y-1.25 hover:shadow-(--shadow) max-[720px]:min-h-0 max-[720px]:rounded-[19px] max-[720px]:p-4.75"
             data-reveal
           >
             <div class="flex items-center justify-between gap-3">
-              <span class="text-[9px] tracking-[0.15em] text-[var(--muted)]"
+              <span class="text-[9px] tracking-[0.15em] text-(--muted)"
                 >دروازه ۰۳ / ارتباط</span
               >
               <span
-                class="grid size-10 place-items-center rounded-[13px] border border-[var(--line)] text-[var(--accent)]"
+                class="grid size-10 place-items-center rounded-[13px] border border-(--line) text-(--accent)"
                 aria-hidden="true"
-                ><svg class="size-[23px]" viewBox="0 0 24 24">
+                ><svg class="size-5.75" viewBox="0 0 24 24">
                   <circle
                     cx="5"
                     cy="7"
@@ -684,10 +684,10 @@
               ></span>
             </div>
             <div
-              class="relative my-4 flex h-[104px] items-center justify-center overflow-hidden rounded-[15px] border border-[var(--line)] bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-[135px] before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[14px] max-[720px]:h-[88px]"
+              class="relative my-4 flex h-26 items-center justify-center overflow-hidden rounded-[15px] border border-(--line) bg-[linear-gradient(130deg,rgba(255,255,255,0.08),var(--accent-soft))] before:absolute before:size-33.75 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.5 max-[720px]:h-22"
             >
               <svg
-                class="relative z-10 h-[84px] w-[110px]"
+                class="relative z-10 h-21 w-27.5"
                 viewBox="0 0 130 90"
                 aria-hidden="true"
               >
@@ -708,46 +708,46 @@
               بازار کسب‌وکار
             </h3>
             <p
-              class="my-[9px] mb-[17px] text-[11px] leading-[1.75] text-[var(--muted)]"
+              class="my-2.25 mb-4.25 text-[11px] leading-[1.75] text-(--muted)"
             >
               جایی که ارزش با انسان‌ها روبه‌رو می‌شود: نیاز مشتریان،
               جایگاه‌یابی، رقابت، مشارکت و رشد.
             </p>
-            <div class="mt-auto flex flex-wrap gap-[6px]">
+            <div class="mt-auto flex flex-wrap gap-1.5">
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >مشتریان</span
               >
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >جایگاه‌یابی</span
               >
               <span
-                class="rounded-full border border-[var(--line)] bg-white/[0.07] px-[9px] py-[7px] text-[9px] text-[var(--ink-soft)]"
+                class="rounded-full border border-(--line) bg-white/[0.07] px-2.25 py-1.75 text-[9px] text-(--ink-soft)"
                 >رشد</span
               >
             </div>
             <a
-              class="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-[14px] text-[10px] font-bold"
+              class="mt-5 flex items-center justify-between border-t border-(--line) pt-3.5 text-[10px] font-bold"
               href="#library"
               >کاوش در بازار
-              <span class="text-base text-[var(--accent)]">↗</span></a
+              <span class="text-base text-(--accent)">↗</span></a
             >
           </article>
         </div>
       </section>
 
       <section
-        class="mx-auto w-[min(1200px,calc(100%-56px))] pt-[30px] pb-[95px] max-[720px]:w-[calc(100%-32px)] max-[720px]:pt-2 max-[720px]:pb-[70px]"
+        class="mx-auto w-[min(1200px,calc(100%-56px))] pt-7.5 pb-23.75 max-[720px]:w-[calc(100%-32px)] max-[720px]:pt-2 max-[720px]:pb-17.5"
         id="library"
       >
         <div
-          class="mb-[27px] flex items-end justify-between gap-[30px] max-[720px]:block"
+          class="mb-6.75 flex items-end justify-between gap-7.5 max-[720px]:block"
           data-reveal
         >
           <div>
             <p
-              class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+              class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-(--accent)"
             >
               کتابخانه دانش
             </p>
@@ -756,13 +756,13 @@
             >
               برای خواندن، شنیدن
               <em
-                class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+                class="font-editorial text-[1.04em] font-medium text-(--accent)"
                 >و تجربه‌کردن.</em
               >
             </h2>
           </div>
           <p
-            class="mb-[3px] max-w-[330px] text-xs leading-[1.8] text-[var(--muted)] max-[720px]:mt-[15px]"
+            class="mb-0.75 max-w-82.5 text-xs leading-[1.8] text-(--muted) max-[720px]:mt-3.75"
           >
             مجموعه‌ای زنده از پژوهش‌ها، کتاب‌ها، گفت‌وگوها و تجربه‌های یادگیری
             که بر اساس چارچوب عمارت کسب‌وکار سازمان‌دهی شده است.
@@ -770,20 +770,20 @@
         </div>
 
         <div
-          class="grid grid-cols-[1.15fr_0.9fr_0.9fr_0.9fr] gap-[13px] max-[960px]:grid-cols-2 max-[720px]:gap-[9px] max-[390px]:grid-cols-1"
+          class="grid grid-cols-[1.15fr_0.9fr_0.9fr_0.9fr] gap-3.25 max-[960px]:grid-cols-2 max-[720px]:gap-2.25 max-[390px]:grid-cols-1"
         >
           <article
-            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            class="relative min-h-71.25 min-w-0 overflow-hidden rounded-[20px] border border-(--glass-border) bg-(--glass) p-5.25 shadow-(--card-shadow) backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-65 max-[720px]:rounded-2xl max-[720px]:p-3.5 max-[390px]:min-h-0"
             id="books"
             data-reveal
           >
             <div
-              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-(--muted)"
             >
               <span>۰۱ / عمیق بخوانید</span><span>↗</span>
             </div>
             <div
-              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+              class="relative my-4.5 h-25.5 overflow-hidden rounded-[13px] border border-(--glass-border) bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-36.25 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.25 max-[720px]:h-20.5 max-[390px]:h-26.25"
             >
               <svg
                 class="absolute inset-0 size-full"
@@ -801,31 +801,31 @@
               کتاب‌ها و آثار مکتوب
             </h3>
             <p
-              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+              class="my-2 mb-3.75 text-[10px] leading-[1.7] text-(--muted)"
             >
               ایده‌ها و چارچوب‌های جامع برای درک معماری کسب‌وکار و نظام‌های
               برند.
             </p>
             <a
-              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              class="inline-flex items-center gap-2.25 text-[10px] font-bold"
               href="#contact"
               >مشاهده آثار
-              <span class="text-base text-[var(--accent)]">←</span></a
+              <span class="text-base text-(--accent)">←</span></a
             >
           </article>
 
           <article
-            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            class="relative min-h-71.25 min-w-0 overflow-hidden rounded-[20px] border border-(--glass-border) bg-(--glass) p-5.25 shadow-(--card-shadow) backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-65 max-[720px]:rounded-2xl max-[720px]:p-3.5 max-[390px]:min-h-0"
             id="articles"
             data-reveal
           >
             <div
-              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-(--muted)"
             >
               <span>۰۲ / شفاف بیندیشید</span><span>↗</span>
             </div>
             <div
-              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+              class="relative my-4.5 h-25.5 overflow-hidden rounded-[13px] border border-(--glass-border) bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-36.25 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.25 max-[720px]:h-20.5 max-[390px]:h-26.25"
             >
               <svg
                 class="absolute inset-0 size-full"
@@ -844,31 +844,31 @@
               مقالات و یادداشت‌ها
             </h3>
             <p
-              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+              class="my-2 mb-3.75 text-[10px] leading-[1.7] text-(--muted)"
             >
               دیدگاه‌هایی مبتنی بر پژوهش درباره انتخاب‌هایی که مسیر کسب‌وکارها و
               برندها را شکل می‌دهند.
             </p>
             <a
-              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              class="inline-flex items-center gap-2.25 text-[10px] font-bold"
               href="#contact"
               >مطالعه مقالات
-              <span class="text-base text-[var(--accent)]">←</span></a
+              <span class="text-base text-(--accent)">←</span></a
             >
           </article>
 
           <article
-            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            class="relative min-h-71.25 min-w-0 overflow-hidden rounded-[20px] border border-(--glass-border) bg-(--glass) p-5.25 shadow-(--card-shadow) backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-65 max-[720px]:rounded-2xl max-[720px]:p-3.5 max-[390px]:min-h-0"
             id="podcasts"
             data-reveal
           >
             <div
-              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-(--muted)"
             >
               <span>۰۳ / به ایده‌ها گوش دهید</span><span>↗</span>
             </div>
             <div
-              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+              class="relative my-4.5 h-25.5 overflow-hidden rounded-[13px] border border-(--glass-border) bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-36.25 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.25 max-[720px]:h-20.5 max-[390px]:h-26.25"
             >
               <svg
                 class="absolute inset-0 size-full"
@@ -887,31 +887,31 @@
               پادکست‌ها و گفت‌وگوها
             </h3>
             <p
-              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+              class="my-2 mb-3.75 text-[10px] leading-[1.7] text-(--muted)"
             >
               گفت‌وگوها، سخنرانی‌ها و نشست‌های ضبط‌شده درباره تفکر راهبردی در
               کسب‌وکار.
             </p>
             <a
-              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              class="inline-flex items-center gap-2.25 text-[10px] font-bold"
               href="#contact"
               >شنیدن و تماشا
-              <span class="text-base text-[var(--accent)]">←</span></a
+              <span class="text-base text-(--accent)">←</span></a
             >
           </article>
 
           <article
-            class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[var(--glass)] p-[21px] shadow-[var(--card-shadow)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-[260px] max-[720px]:rounded-2xl max-[720px]:p-[14px] max-[390px]:min-h-0"
+            class="relative min-h-71.25 min-w-0 overflow-hidden rounded-[20px] border border-(--glass-border) bg-(--glass) p-5.25 shadow-(--card-shadow) backdrop-blur-xl transition-transform duration-200 hover:-translate-y-1 max-[960px]:min-h-65 max-[720px]:rounded-2xl max-[720px]:p-3.5 max-[390px]:min-h-0"
             id="learning"
             data-reveal
           >
             <div
-              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-[var(--muted)]"
+              class="flex items-center justify-between text-[8px] uppercase tracking-[0.14em] text-(--muted)"
             >
               <span>۰۴ / با عمل بیاموزید</span><span>↗</span>
             </div>
             <div
-              class="relative my-[18px] h-[102px] overflow-hidden rounded-[13px] border border-[var(--glass-border)] bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-[145px] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-[var(--line)] max-[720px]:my-[13px] max-[720px]:h-[82px] max-[390px]:h-[105px]"
+              class="relative my-4.5 h-25.5 overflow-hidden rounded-[13px] border border-(--glass-border) bg-[linear-gradient(130deg,rgba(246,249,239,0.24),rgba(42,81,78,0.12))] before:absolute before:left-1/2 before:top-1/2 before:size-36.25 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:border before:border-(--line) max-[720px]:my-3.25 max-[720px]:h-20.5 max-[390px]:h-26.25"
             >
               <svg
                 class="absolute inset-0 size-full"
@@ -930,27 +930,27 @@
               دوره‌ها و کارگاه‌ها
             </h3>
             <p
-              class="my-2 mb-[15px] text-[10px] leading-[1.7] text-[var(--muted)]"
+              class="my-2 mb-3.75 text-[10px] leading-[1.7] text-(--muted)"
             >
               یادگیری ساختاریافته برای دانشجویان، متخصصان، مدیران و تیم‌ها.
             </p>
             <a
-              class="inline-flex items-center gap-[9px] text-[10px] font-bold"
+              class="inline-flex items-center gap-2.25 text-[10px] font-bold"
               href="#contact"
               >آشنایی با برنامه‌های آموزشی
-              <span class="text-base text-[var(--accent)]">←</span></a
+              <span class="text-base text-(--accent)">←</span></a
             >
           </article>
         </div>
       </section>
 
       <section
-        class="mx-auto mb-[100px] grid w-[min(1200px,calc(100%-56px))] min-w-0 grid-cols-[minmax(0,0.83fr)_minmax(0,1.17fr)] items-center gap-[35px] rounded-[28px] border border-[var(--glass-border)] bg-[var(--glass)] p-[clamp(22px,4vw,45px)] shadow-[var(--card-shadow)] backdrop-blur-xl max-[720px]:mb-[70px] max-[720px]:w-[calc(100%-32px)] max-[720px]:grid-cols-1 max-[720px]:gap-[23px] max-[720px]:rounded-[22px] max-[720px]:p-4"
+        class="mx-auto mb-25 grid w-[min(1200px,calc(100%-56px))] min-w-0 grid-cols-[minmax(0,0.83fr)_minmax(0,1.17fr)] items-center gap-8.75 rounded-[28px] border border-(--glass-border) bg-(--glass) p-[clamp(22px,4vw,45px)] shadow-(--card-shadow) backdrop-blur-xl max-[720px]:mb-17.5 max-[720px]:w-[calc(100%-32px)] max-[720px]:grid-cols-1 max-[720px]:gap-5.75 max-[720px]:rounded-[22px] max-[720px]:p-4"
         id="about"
         data-reveal
       >
         <div
-          class="relative min-h-[285px] min-w-0 overflow-hidden rounded-[20px] border border-[var(--glass-border)] bg-[linear-gradient(145deg,rgba(10,42,44,0.5),rgba(189,208,194,0.22))] max-[720px]:min-h-[220px]"
+          class="relative min-h-71.25 min-w-0 overflow-hidden rounded-[20px] border border-(--glass-border) bg-[linear-gradient(145deg,rgba(10,42,44,0.5),rgba(189,208,194,0.22))] max-[720px]:min-h-55"
           aria-hidden="true"
         >
           <div
@@ -968,21 +968,21 @@
 
         <div class="min-w-0">
           <p
-            class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+            class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-(--accent)"
           >
             اندیشه‌پرداز این چارچوب
           </p>
           <h2
-            class="m-0 max-w-[560px] font-display text-[clamp(31px,4.2vw,49px)] font-semibold leading-[1.08] tracking-[-0.065em]"
+            class="m-0 max-w-140 font-display text-[clamp(31px,4.2vw,49px)] font-semibold leading-[1.08] tracking-[-0.065em]"
           >
             عمق دانشگاهی؛<br />
             <em
-              class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+              class="font-editorial text-[1.04em] font-medium text-(--accent)"
               >نگاهی کاربردی.</em
             >
           </h2>
           <p
-            class="mt-[17px] max-w-[590px] text-xs leading-[1.9] text-[var(--muted)]"
+            class="mt-4.25 max-w-147.5 text-xs leading-[1.9] text-(--muted)"
           >
             دکتر سید مرتضی عظیم‌زاده به بررسی پیوندهای میان طراحی کسب‌وکار،
             معماری برند و رشد راهبردی می‌پردازد. این وب‌سایت مجموعه‌ای از
@@ -990,37 +990,37 @@
             ایده‌ها، پژوهش، آموزش و گفت‌وگو.
           </p>
 
-          <div class="mt-[22px] grid grid-cols-3 gap-2 max-[720px]:grid-cols-1">
+          <div class="mt-5.5 grid grid-cols-3 gap-2 max-[720px]:grid-cols-1">
             <div
-              class="min-w-0 rounded-xl border border-[var(--line)] bg-[var(--glass)] p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
+              class="min-w-0 rounded-xl border border-(--line) bg-(--glass) p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
             >
               <strong class="block font-display text-[11px] font-semibold"
                 >پژوهش</strong
               >
               <small
-                class="mt-[5px] block text-[8px] leading-[1.45] text-[var(--muted)] max-[720px]:mt-0 max-[720px]:text-right"
+                class="mt-1.25 block text-[8px] leading-[1.45] text-(--muted) max-[720px]:mt-0 max-[720px]:text-right"
                 >اندیشه مبتنی بر شواهد</small
               >
             </div>
             <div
-              class="min-w-0 rounded-xl border border-[var(--line)] bg-[var(--glass)] p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
+              class="min-w-0 rounded-xl border border-(--line) bg-(--glass) p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
             >
               <strong class="block font-display text-[11px] font-semibold"
                 >آموزش</strong
               >
               <small
-                class="mt-[5px] block text-[8px] leading-[1.45] text-[var(--muted)] max-[720px]:mt-0 max-[720px]:text-right"
+                class="mt-1.25 block text-[8px] leading-[1.45] text-(--muted) max-[720px]:mt-0 max-[720px]:text-right"
                 >دسترس‌پذیر کردن ایده‌ها</small
               >
             </div>
             <div
-              class="min-w-0 rounded-xl border border-[var(--line)] bg-[var(--glass)] p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
+              class="min-w-0 rounded-xl border border-(--line) bg-(--glass) p-3 max-[720px]:flex max-[720px]:items-center max-[720px]:justify-between max-[720px]:gap-3"
             >
               <strong class="block font-display text-[11px] font-semibold"
                 >عمل</strong
               >
               <small
-                class="mt-[5px] block text-[8px] leading-[1.45] text-[var(--muted)] max-[720px]:mt-0 max-[720px]:text-right"
+                class="mt-1.25 block text-[8px] leading-[1.45] text-(--muted) max-[720px]:mt-0 max-[720px]:text-right"
                 >چارچوب‌هایی برای اقدام</small
               >
             </div>
@@ -1029,38 +1029,38 @@
       </section>
 
       <section
-        class="mx-auto mb-[70px] flex w-[min(1200px,calc(100%-56px))] items-center justify-between gap-[25px] rounded-3xl border border-[var(--glass-border)] bg-[var(--glass)] p-[clamp(26px,4vw,48px)] shadow-[var(--card-shadow)] backdrop-blur-xl max-[720px]:mb-[45px] max-[720px]:w-[calc(100%-32px)] max-[720px]:flex-col max-[720px]:items-start max-[720px]:rounded-[20px]"
+        class="mx-auto mb-17.5 flex w-[min(1200px,calc(100%-56px))] items-center justify-between gap-6.25 rounded-3xl border border-(--glass-border) bg-(--glass) p-[clamp(26px,4vw,48px)] shadow-(--card-shadow) backdrop-blur-xl max-[720px]:mb-11.25 max-[720px]:w-[calc(100%-32px)] max-[720px]:flex-col max-[720px]:items-start max-[720px]:rounded-[20px]"
         id="contact"
         data-reveal
       >
         <div class="min-w-0">
           <p
-            class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]"
+            class="mb-3 text-[9px] font-bold uppercase tracking-[0.2em] text-(--accent)"
           >
             ایده‌ها در گفت‌وگو رشد می‌کنند
           </p>
           <h2
-            class="m-0 max-w-[700px] font-display text-[clamp(28px,4vw,43px)] font-semibold leading-[1.08] tracking-[-0.065em]"
+            class="m-0 max-w-175 font-display text-[clamp(28px,4vw,43px)] font-semibold leading-[1.08] tracking-[-0.065em]"
           >
             <span data-i18n="contact.headingBefore">
               بیایید تصویری روشن‌تر از
             </span>
             <em
-              class="font-editorial text-[1.04em] font-medium text-[var(--accent)]"
+              class="font-editorial text-[1.04em] font-medium text-(--accent)"
               data-i18n="contact.headingEmphasis"
               >کسب‌وکار</em
             >
             <span data-i18n="contact.headingAfter">بسازیم.</span>
           </h2>
           <p
-            class="mt-3 max-w-[570px] text-[11px] leading-[1.8] text-[var(--muted)]"
+            class="mt-3 max-w-142.5 text-[11px] leading-[1.8] text-(--muted)"
           >
             برای همکاری‌های دانشگاهی، دعوت به سخنرانی، برگزاری کارگاه و گفت‌وگو
             درباره معماری برند و کسب‌وکار.
           </p>
         </div>
         <a
-          class="inline-flex min-h-[47px] shrink-0 items-center justify-center gap-3 rounded-[13px] bg-[var(--button-bg)] px-[17px] text-[11px] font-bold text-[var(--button-text)] shadow-[0_9px_24px_rgba(18,50,52,0.12)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(18,50,52,0.17)]"
+          class="inline-flex min-h-11.75 shrink-0 items-center justify-center gap-3 rounded-[13px] bg-(--button-bg) px-4.25 text-[11px] font-bold text-(--button-text) shadow-[0_9px_24px_rgba(18,50,52,0.12)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(18,50,52,0.17)]"
           href="mailto:hello@example.com"
         >
           آغاز گفت‌وگو <span aria-hidden="true">↗</span>
@@ -1069,29 +1069,29 @@
     </main>
 
     <footer
-      class="border-t border-[var(--line)] bg-[var(--glass)] backdrop-blur-xl"
+      class="border-t border-(--line) bg-(--glass) backdrop-blur-xl"
     >
       <div
-        class="mx-auto flex min-h-[100px] w-[min(1200px,calc(100%-56px))] items-center justify-between gap-6 max-[720px]:w-[calc(100%-32px)] max-[720px]:flex-col max-[720px]:items-start max-[720px]:justify-center max-[720px]:gap-[18px] max-[720px]:py-[23px]"
+        class="mx-auto flex min-h-25 w-[min(1200px,calc(100%-56px))] items-center justify-between gap-6 max-[720px]:w-[calc(100%-32px)] max-[720px]:flex-col max-[720px]:items-start max-[720px]:justify-center max-[720px]:gap-4.5 max-[720px]:py-5.75"
       >
         <div>
           <div class="font-display text-xs font-semibold">
             دکتر سید مرتضی عظیم‌زاده
           </div>
-          <div class="mt-[5px] text-[9px] text-[var(--muted)]">
+          <div class="mt-1.25 text-[9px] text-(--muted)">
             عمارت کسب‌وکار · معماری کسب‌وکار و برند
           </div>
         </div>
 
-        <div class="flex flex-wrap gap-[19px] text-[10px] text-[var(--muted)]">
-          <a class="hover:text-[var(--ink)]" href="#home">بازگشت به بالا ↑</a>
-          <a class="hover:text-[var(--ink)]" href="#books">کتاب‌ها</a>
-          <a class="hover:text-[var(--ink)]" href="#articles">مقالات</a>
-          <a class="hover:text-[var(--ink)]" href="#podcasts">پادکست‌ها</a>
-          <a class="hover:text-[var(--ink)]" href="#learning">دوره‌ها</a>
+        <div class="flex flex-wrap gap-4.75 text-[10px] text-(--muted)">
+          <a class="hover:text-(--ink)" href="#home">بازگشت به بالا ↑</a>
+          <a class="hover:text-(--ink)" href="#books">کتاب‌ها</a>
+          <a class="hover:text-(--ink)" href="#articles">مقالات</a>
+          <a class="hover:text-(--ink)" href="#podcasts">پادکست‌ها</a>
+          <a class="hover:text-(--ink)" href="#learning">دوره‌ها</a>
         </div>
 
-        <div class="text-[9px] text-[var(--muted)]">
+        <div class="text-[9px] text-(--muted)">
           © <span id="year"></span> تمامی حقوق محفوظ است.
         </div>
       </div>
